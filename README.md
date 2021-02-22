@@ -6,10 +6,14 @@ Our project “Advance Intelligent Tourist Guide'' is an umbrella for all the gl
 # Pages Concerned to persons
 
 ### Anoop Gupta - Restaurants
+Here we'll have restaurants for 4 metropolitan cities i.e. Delhi Mumbai, Chennai and Kolkata, So basically you'll be making 4 webpages i.e. one for one respective city.
 ### Muskan Goel - Must see place
+Here we'll have must visit place for 4 metropolitan cities i.e. Delhi Mumbai, Chennai and Kolkata, So basically you'll be making 4 webpages i.e. one for one respective city.
 ### Anushree Krishania - Events
+Here we'll have events for 4 metropolitan cities i.e. Delhi Mumbai, Chennai and Kolkata, So basically you'll be making 4 webpages i.e. one for one respective city.
 ### Tanmay Chaturvedi - Shops and markets
-
+Here we'll have shops and makrkets for 4 metropolitan cities i.e. Delhi Mumbai, Chennai and Kolkata, So basically you'll be making 4 webpages i.e. one for one respective city.
+## Also make sure that we have all files of one webpage in one folder, so that it looks clean and will be easily accessible.
 # Make sure you do your work in a different branch and not in the master branch
 
 ## So first we will be doing the frontend part and making all the webpages, then we will make the important pages like home page, Login page, Admin Page and FAQs and Info. 
