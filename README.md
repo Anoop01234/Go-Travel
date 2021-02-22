@@ -4,11 +4,14 @@ Our project “Advance Intelligent Tourist Guide'' is an umbrella for all the gl
 # Will change the readme file later when submitting.
 
 # Pages Concerned to persons
-##
+
 ### Anoop Gupta - Restaurants
 ### Muskan Goel - Must see place
 ### Anushree Krishania - Events
 ### Tanmay Chaturvedi - Shops and markets
+
+# Make sure you do your work in a different branch and not in the same branch
+
 ## So first we will be doing the frontend part and making all the webpages, then we will make the important pages like home page, Login page, Admin Page and FAQs and Info. 
 
 # Deadline for completion of 1st work, lets keep it 15th March, since we need more time to complete the rest of the part. 
