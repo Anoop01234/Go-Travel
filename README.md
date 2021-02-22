@@ -10,7 +10,7 @@ Our project “Advance Intelligent Tourist Guide'' is an umbrella for all the gl
 ### Anushree Krishania - Events
 ### Tanmay Chaturvedi - Shops and markets
 
-# Make sure you do your work in a different branch and not in the same branch
+# Make sure you do your work in a different branch and not in the master branch
 
 ## So first we will be doing the frontend part and making all the webpages, then we will make the important pages like home page, Login page, Admin Page and FAQs and Info. 
 
