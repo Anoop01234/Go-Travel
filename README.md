@@ -21,4 +21,4 @@ Here we'll have shops and makrkets for 4 metropolitan cities i.e. Delhi Mumbai, 
 # Deadline for completion of 1st work, lets keep it 15th March, since we need more time to complete the rest of the part. 
 
 # For the refrence purpose, template has been provided in the Demo branch from where you clone it and use it further. 
-## But just make sure that entitled work is finished before 10th so that we can loo at the errors and debug them (if any).
+## But just make sure that entitled work is finished till 5th so that we can loo at the errors and debug them (if any).
