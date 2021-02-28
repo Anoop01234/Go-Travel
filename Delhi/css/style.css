@@ -247,11 +247,6 @@ a:focus,
     margin-top: 0;
 }
 
-.intro span {
-    color: #a7c44c;
-    font-weight: 600;
-}
-
 .intro p {
     color: #fff;
     font-size: 24px;
@@ -546,14 +541,6 @@ label {
 
 #contact .contact-item {
     margin: 20px 0 40px 0;
-}
-
-#contact .contact-item span {
-    font-weight: 400;
-    color: #aaa;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-    display: inline-block;
 }
 
 
