@@ -23,7 +23,6 @@ h2 {
     font-weight: 400;
     font-size: 38px;
     color: #333;
-    text-transform: uppercase;
     position: relative;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -317,12 +316,13 @@ header .intro-text {
 }
 
 #home .menu-section-title {
-    font-size: 32px;
+    font-size: 25px;
     display: block;
     font-weight: 400;
     color: #444;
     margin: 20px 0;
     text-align: center;
+    line-height: 35px;
 }
 
 #home .menu-item {

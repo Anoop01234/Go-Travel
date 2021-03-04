@@ -23,7 +23,6 @@ h2 {
     font-weight: 400;
     font-size: 38px;
     color: #333;
-    text-transform: uppercase;
     position: relative;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -227,7 +226,7 @@ a:focus,
     display: table;
     width: 100%;
     padding: 0;
-    background: url(../img/delhi.jpg) center center no-repeat;
+    background: url(../img/delhi/delhi.jpg) center center no-repeat;
     background-color: #e5e5e5;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -317,7 +316,7 @@ header .intro-text {
 }
 
 #home .menu-section-title {
-    font-size: 32px;
+    font-size: 40px;
     display: block;
     font-weight: 400;
     color: #444;
