@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,19 +6,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Go-Travels</title>
-    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="shortcut icon" href="{% static ' img/icon.png ' %}">
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel=" stylesheet " type="text/css " href="{% static 'css/bootstrap.css ' %} ">
     <!-- Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+    <link rel="stylesheet " type="text/css " href="{% static 'css/style.css' %} ">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700' %} " rel="stylesheet ">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' %} " rel="stylesheet ">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Rochester' %} " rel="stylesheet ">
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="background-image: url(img/giphy.gif);">
     <!-- Navigation-->
-    <nav id="menu" class="navbar navbar-default navbar-fixed-top" style="background-color: black; opacity: 0.7">
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -53,161 +54,164 @@
 
     <!-- Home page -->
 
-    <body>
-        <div id="home">
-            <div class="container">
-                <div class="row">
-                    <div class="menu-section">
-                        <h2 class="menu-section-title">Calcutta is not just a place, it is indeed an emotion. It is chaotic, it is moody. It is a rich tapestry of culture, politics, and history, and it is nostalgia personified.</h2>
+
+    <div id="home">
+        <div class="container">
+            <div class="row">
+                <div class="menu-section">
+                    <h2 class="menu-section-title">Calcutta is not just a place, it is indeed an emotion. It is chaotic, it is moody. It is a rich tapestry of culture, politics, and history, and it is nostalgia personified.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="m">
+            <h1>Top 15 places in Kolkata</h1>
+        </div>
+
+    </div>
+    <div class="mydiv" style="text-align: center; ">
+        <ul class="myul " style="align-items: center; ">
+            <li class="myli ">
+                <img src="Images/victorialmemorial.jpg " class="myimg zoom">
+                <h3>Victoria Memorial</h3>
+                <p class="price "> 📍 Location </p>
+                <a href="https://www.eazydiner.com/delhi-ncr/annamaya-andaz-delhi-aerocity-igi-airport-643599?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/fortwilliam.jpg " class="myimg zoom">
+                <h3>Fort William</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/delhi-ncr/burma-burma-dlf-mall-of-india-sector-18-noida-657456?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/belurmath.jpg" class="myimg zoom">
+                <h3>Belur Math</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/delhi-ncr/dilli-32-the-leela-ambience-convention-hotel-vivek-vihar-110680?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/howrahbridge.jpg " class="myimg zoom">
+                <h3>Howrah Bridge</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/delhi-ncr/fatjar-cafe-market-kailash-colony-south-delhi-653614?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/birlaplaneterium.jpg " class="myimg zoom">
+                <h3>Birla Planetarium</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/delhi-ncr/food-exchange-novotel-new-delhi-aerocity-an-accorhotels-brand-igi-airport-600092?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/indianmuseum.jpg" class="myimg zoom">
+                <h3>Indian Museum</h3>
+                <p class="price ">📍 Location</p>
+                <a href="https://www.eazydiner.com/delhi-ncr/infinity-crowne-plaza-mayur-vihar-phase-1-111945?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/marblepalace.jpg" class="myimg zoom">
+                <h3>Marble Palace Mansion</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/delhi-ncr/kiara-soul-kitchen-greater-kailash-gk-2-south-delhi-653446?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/sciencecity.jpg" class="myimg zoom">
+                <h3>Science City</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/delhi-ncr/new-york-cafe-radisson-blu-plaza-delhi-mahipalpur-delhi-110982?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/edengardens.jpg" class="myimg zoom">
+                <h3>Eden Gardens</h3>
+                <p class="price ">📍 Location</p>
+                <a href="https://www.eazydiner.com/delhi-ncr/quoin-novotel-new-delhi-aerocity-an-accorhotels-brand-igi-airport-600093?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/rabindrasarovar.jpg" class="myimg zoom">
+                <h3>Rabindra Sarovar</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/delhi-ncr/reve-worldmark-1-657498?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/shobhabajarrajbari.jpg" class="myimg zoom">
+                <h3>Shobhabazar Rajbari</h3>
+                <p class="price ">📍 Location</p>
+                <a href="https://www.eazydiner.com/delhi-ncr/shang-palace-shangri-la-s-eros-hotel-connaught-place-cp-612517?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/kalighattemple.jpg" class="myimg zoom">
+                <h3>Kalighat Temple</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/delhi-ncr/tamra-shangri-la-s-eros-hotel-connaught-place-cp-121269?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/EcoToiurism.jpg" class="myimg zoom">
+                <h3>Eco Tourism Park</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/delhi-ncr/food-store-double-tree-by-hilton-sector-56-112399?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/aliporeZoo.jpg" class="myimg zoom">
+                <h3>Alipore Zoo</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/delhi-ncr/the-imperial-spice-connaught-place-cp-central-delhi-656222?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/botanicalgardens.jpg" class="myimg zoom">
+                <h3>Botanical Gardens of Calcutta</h3>
+                <p class="price ">📍 Location</p>
+                <a href="https://www.eazydiner.com/delhi-ncr/thyme-the-umrao-rajokri-111611?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="text-center">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Leave a Reply</h3>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-custom btn-lg">Post Comment</button>
+                </form>
             </div>
-            <div class="m">
-                <h1>Top 15 places in Kolkata</h1>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container text-center">
+            <div class="col-md-6">
+                <p>Designed with patience. 🙂 All rights reserved. Design by Anoop & Muskan</p>
             </div>
 
         </div>
-        <div class="mydiv" style="text-align: center; ">
-            <ul class="myul " style="align-items: center; ">
-                <li class="myli ">
-                    <img src="Images/victorialmemorial.jpg " class="myimg zoom">
-                    <h3>Victoria Memorial</h3>
-                    <p class="price "> 📍 Location </p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/annamaya-andaz-delhi-aerocity-igi-airport-643599?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/fortwilliam.jpg " class="myimg zoom">
-                    <h3>Fort William</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/burma-burma-dlf-mall-of-india-sector-18-noida-657456?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/belurmath.jpg" class="myimg zoom">
-                    <h3>Belur Math</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/dilli-32-the-leela-ambience-convention-hotel-vivek-vihar-110680?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/howrahbridge.jpg " class="myimg zoom">
-                    <h3>Howrah Bridge</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/fatjar-cafe-market-kailash-colony-south-delhi-653614?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/birlaplaneterium.jpg " class="myimg zoom">
-                    <h3>Birla Planetarium</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/food-exchange-novotel-new-delhi-aerocity-an-accorhotels-brand-igi-airport-600092?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/indianmuseum.jpg" class="myimg zoom">
-                    <h3>Indian Museum</h3>
-                    <p class="price ">📍 Location</p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/infinity-crowne-plaza-mayur-vihar-phase-1-111945?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/marblepalace.jpg" class="myimg zoom">
-                    <h3>Marble Palace Mansion</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/kiara-soul-kitchen-greater-kailash-gk-2-south-delhi-653446?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/sciencecity.jpg" class="myimg zoom">
-                    <h3>Science City</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/new-york-cafe-radisson-blu-plaza-delhi-mahipalpur-delhi-110982?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/edengardens.jpg" class="myimg zoom">
-                    <h3>Eden Gardens</h3>
-                    <p class="price ">📍 Location</p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/quoin-novotel-new-delhi-aerocity-an-accorhotels-brand-igi-airport-600093?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/rabindrasarovar.jpg" class="myimg zoom">
-                    <h3>Rabindra Sarovar</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/reve-worldmark-1-657498?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/shobhabajarrajbari.jpg" class="myimg zoom">
-                    <h3>Shobhabazar Rajbari</h3>
-                    <p class="price ">📍 Location</p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/shang-palace-shangri-la-s-eros-hotel-connaught-place-cp-612517?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/kalighattemple.jpg" class="myimg zoom">
-                    <h3>Kalighat Temple</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/tamra-shangri-la-s-eros-hotel-connaught-place-cp-121269?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/EcoToiurism.jpg" class="myimg zoom">
-                    <h3>Eco Tourism Park</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/food-store-double-tree-by-hilton-sector-56-112399?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/aliporeZoo.jpg" class="myimg zoom">
-                    <h3>Alipore Zoo</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/the-imperial-spice-connaught-place-cp-central-delhi-656222?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/botanicalgardens.jpg" class="myimg zoom">
-                    <h3>Botanical Gardens of Calcutta</h3>
-                    <p class="price ">📍 Location</p>
-                    <a href="https://www.eazydiner.com/delhi-ncr/thyme-the-umrao-rajokri-111611?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
+    </div>
+    <script type="text/javascript " src="js/jquery.1.11.1.js "></script>
+    <script type="text/javascript " src="js/bootstrap.js "></script>
+    <script type="text/javascript " src="js/SmoothScroll.js "></script>
+    <script type="text/javascript " src="js/jqBootstrapValidation.js "></script>
+    <script type="text/javascript " src="js/contact_me.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+    <script type="text/javascript " src="js/javascript.js "></script>
 
-            </ul>
-        </div>
+</body>
 
-        <!-- Contact Section -->
-        <div id="contact " class="text-center ">
-            <div class="container ">
-                <div class="section-title text-center ">
-                    <h3>Send us a message</h3>
-                </div>
-                <div class="col-md-8 col-md-offset-2 ">
-                    <form name="sentMessage " id="contactForm " novalidate>
-                        <div class="row ">
-                            <div class="col-md-6 ">
-                                <div class="form-group ">
-                                    <input type="text " id="name " class="form-control " placeholder="Name " required="required ">
-                                    <p class="help-block text-danger "></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 ">
-                                <div class="form-group ">
-                                    <input type="email " id="email " class="form-control " placeholder="Email " required="required ">
-                                    <p class="help-block text-danger "></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group ">
-                            <textarea name="message " id="message " class="form-control " rows="4 " placeholder="Message " required></textarea>
-                            <p class="help-block text-danger "></p>
-                        </div>
-                        <div id="success "></div>
-                        <button type="submit " class="btn btn-custom btn-lg ">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div><br><br>
-        <div id="footer ">
-            <div class="container text-center ">
-                <p>Designed with patience. 🙂 All rights reserved.</p>
-            </div>
-        </div>
-        <script type="text/javascript " src="js/jquery.1.11.1.js "></script>
-        <script type="text/javascript " src="js/bootstrap.js "></script>
-        <script type="text/javascript " src="js/SmoothScroll.js "></script>
-        <script type="text/javascript " src="js/jqBootstrapValidation.js "></script>
-        <script type="text/javascript " src="js/contact_me.js "></script>
-        <script type="text/javascript " src="js/main.js "></script>
-        <script type="text/javascript " src="js/javascript.js "></script>
-
-    </body>
-
-    </html>
+</html>
