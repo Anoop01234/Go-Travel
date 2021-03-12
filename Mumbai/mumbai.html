@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,19 +6,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Go-Travels</title>
-    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="shortcut icon" href="{% static ' img/icon.png ' %}">
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel=" stylesheet " type="text/css " href="{% static 'css/bootstrap.css ' %} ">
     <!-- Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+    <link rel="stylesheet " type="text/css " href="{% static 'css/style.css' %} ">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700' %} " rel="stylesheet ">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' %} " rel="stylesheet ">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Rochester' %} " rel="stylesheet ">
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="background-image: url(img/giphy.gif);">
     <!-- Navigation-->
-    <nav id="menu" class="navbar navbar-default navbar-fixed-top" style="background-color: black; opacity: 0.7">
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -49,162 +50,165 @@
     </header>
     <!-- Home page -->
 
-    <body>
-        <div id="home">
-            <div class="container">
-                <div class="row">
-                    <div class="menu-section">
-                        <h2 class="menu-section-title">Mumbai is a city that has been inspiration for writing many beautiful stories and making several movies. The city has hypnotized every soul that has come across its exclusivity and developed taste for it.To help you with that,
-                            we have listed down some of the amazing places visit in Mumbai, which will make you fall in love with this extravagant city over and over again.</h2>
+
+    <div id="home">
+        <div class="container">
+            <div class="row">
+                <div class="menu-section">
+                    <h2 class="menu-section-title">Mumbai is a city that has been inspiration for writing many beautiful stories and making several movies. The city has hypnotized every soul that has come across its exclusivity and developed taste for it.To help you with that, we have
+                        listed down some of the amazing places visit in Mumbai, which will make you fall in love with this extravagant city over and over again.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="m">
+            <h1>Top 15 places in Mumbai</h1>
+        </div>
+
+    </div>
+    <div class="mydiv" style="text-align: center; ">
+        <ul class="myul " style="align-items: center; ">
+            <li class="myli ">
+                <img src="Images/gatewayofindia.jpg " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>Gateway of India</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/mumbai/candy-green-breach-candy-south-mumbai-643680?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/Juhu-Beach.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px; ">
+                <h3>Juhu Beach</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/mumbai/east-sahara-star-santacruz-east-223118?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/SanjayGandhi.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>Sanjay Gandhi National Park</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/mumbai/house-of-nomad-taj-lands-end-bandra-west-644154?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/Powai-Lake.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>Powai Lake</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/mumbai/jw-cafe-jw-marriott-mumbai-sahar-andheri-east-223137?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/hajialidargah.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>Haji Ali Dargah</h3>
+                <p class="price ">📍 Location</p>
+                <a href="https://www.eazydiner.com/mumbai/mabruk-sahara-star-santacruz-east-227092?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/elephantcaves.jpg " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>Elephanta Caves</h3>
+                <p class="price "> 📍 Location </p>
+                <a href="https://www.eazydiner.com/mumbai/barbeque-nation-virar-western-suburbs-652726?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/siddhivinayak.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>Siddhivinayak Temple</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/mumbai/nawab-saheb-renaissance-mumbai-convention-centre-hotel-powai-223171?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/Chhatrapati-Shivaji-Terminus.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>Chhatrapati Shivaji Terminus (CST)</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/mumbai/pa-pa-ya-bandra-kurla-complex-bkc-western-suburbs-652239?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/Shri-Mahalakshmi-Temple-Kolhapur.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>Shri Mahalakshmi Temple</h3>
+                <p class="price ">📍 Location</p>
+                <a href="" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/Nehru-Centre.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>Nehru Center</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/mumbai/romanos-jw-marriott-mumbai-sahar-andheri-east-223186?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/Kidzania.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>Kidzania</h3>
+                <p class="price ">📍 Location</p>
+                <a href="https://www.eazydiner.com/mumbai/the-drawing-room-the-st-regis-lower-parel-230955?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/Veermata-zoo.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>Veermata Jijabai Bhosale Zoo</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/mumbai/the-earth-plate-sahara-star-santacruz-east-223212?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/EsselWorld.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>EsselWorld</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/pune/the-square-meal-ginger-hotels-andheri-east-503086?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/Marine-Drive-1.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>Marine Drive</h3>
+                <p class="price ">📍 Location </p>
+                <a href="https://www.eazydiner.com/mumbai/ummrao-courtyard-mumbai-international-airport-657448?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="Images/Hanging-Gardens.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>Hanging Gardens</h3>
+                <p class="price ">📍 Location</p>
+                <a href="https://www.eazydiner.com/mumbai/white-charcoal-the-empresa-hotel-andheri-west-western-suburbs-644088?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="text-center">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Leave a Reply</h3>
+            </div>
+            <div class="col-md-8 col-md-offset-2">
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-custom btn-lg">Post Comment</button>
+                </form>
             </div>
-            <div class="m">
-                <h1>Top 15 places in Mumbai</h1>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container text-center">
+            <div class="col-md-6">
+                <p>Designed with patience. 🙂 All rights reserved. Design by Anoop & Muskan</p>
             </div>
 
         </div>
-        <div class="mydiv" style="text-align: center; ">
-            <ul class="myul " style="align-items: center; ">
-                <li class="myli ">
-                    <img src="Images/gatewayofindia.jpg " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>Gateway of India</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/mumbai/candy-green-breach-candy-south-mumbai-643680?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/Juhu-Beach.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px; ">
-                    <h3>Juhu Beach</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/mumbai/east-sahara-star-santacruz-east-223118?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/SanjayGandhi.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>Sanjay Gandhi National Park</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/mumbai/house-of-nomad-taj-lands-end-bandra-west-644154?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/Powai-Lake.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>Powai Lake</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/mumbai/jw-cafe-jw-marriott-mumbai-sahar-andheri-east-223137?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/hajialidargah.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>Haji Ali Dargah</h3>
-                    <p class="price ">📍 Location</p>
-                    <a href="https://www.eazydiner.com/mumbai/mabruk-sahara-star-santacruz-east-227092?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/elephantcaves.jpg " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>Elephanta Caves</h3>
-                    <p class="price "> 📍 Location </p>
-                    <a href="https://www.eazydiner.com/mumbai/barbeque-nation-virar-western-suburbs-652726?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/siddhivinayak.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>Siddhivinayak Temple</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/mumbai/nawab-saheb-renaissance-mumbai-convention-centre-hotel-powai-223171?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/Chhatrapati-Shivaji-Terminus.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>Chhatrapati Shivaji Terminus (CST)</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/mumbai/pa-pa-ya-bandra-kurla-complex-bkc-western-suburbs-652239?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/Shri-Mahalakshmi-Temple-Kolhapur.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>Shri Mahalakshmi Temple</h3>
-                    <p class="price ">📍 Location</p>
-                    <a href="" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/Nehru-Centre.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>Nehru Center</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/mumbai/romanos-jw-marriott-mumbai-sahar-andheri-east-223186?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/Kidzania.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>Kidzania</h3>
-                    <p class="price ">📍 Location</p>
-                    <a href="https://www.eazydiner.com/mumbai/the-drawing-room-the-st-regis-lower-parel-230955?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/Veermata-zoo.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>Veermata Jijabai Bhosale Zoo</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/mumbai/the-earth-plate-sahara-star-santacruz-east-223212?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/EsselWorld.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>EsselWorld</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/pune/the-square-meal-ginger-hotels-andheri-east-503086?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/Marine-Drive-1.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>Marine Drive</h3>
-                    <p class="price ">📍 Location </p>
-                    <a href="https://www.eazydiner.com/mumbai/ummrao-courtyard-mumbai-international-airport-657448?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
-                <li class="myli ">
-                    <img src="Images/Hanging-Gardens.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>Hanging Gardens</h3>
-                    <p class="price ">📍 Location</p>
-                    <a href="https://www.eazydiner.com/mumbai/white-charcoal-the-empresa-hotel-andheri-west-western-suburbs-644088?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit Now</a>
-                </li>
+    </div>
+    <script type="text/javascript " src="js/jquery.1.11.1.js "></script>
+    <script type="text/javascript " src="js/bootstrap.js "></script>
+    <script type="text/javascript " src="js/SmoothScroll.js "></script>
+    <script type="text/javascript " src="js/jqBootstrapValidation.js "></script>
+    <script type="text/javascript " src="js/contact_me.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
+    <script type="text/javascript " src="js/javascript.js "></script>
 
-            </ul>
-        </div>
-
-        <!-- Contact Section -->
-        <div id="contact " class="text-center ">
-            <div class="container ">
-                <div class="section-title text-center ">
-                    <h3>Send us a message</h3>
-                </div>
-                <div class="col-md-8 col-md-offset-2 ">
-                    <form name="sentMessage " id="contactForm " novalidate>
-                        <div class="row ">
-                            <div class="col-md-6 ">
-                                <div class="form-group ">
-                                    <input type="text " id="name " class="form-control " placeholder="Name " required="required ">
-                                    <p class="help-block text-danger "></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 ">
-                                <div class="form-group ">
-                                    <input type="email " id="email " class="form-control " placeholder="Email " required="required ">
-                                    <p class="help-block text-danger "></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group ">
-                            <textarea name="message " id="message " class="form-control " rows="4 " placeholder="Message " required></textarea>
-                            <p class="help-block text-danger "></p>
-                        </div>
-                        <div id="success "></div>
-                        <button type="submit " class="btn btn-custom btn-lg ">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div><br><br>
-        <div id="footer ">
-            <div class="container text-center ">
-                <p>Designed with patience. 🙂 All rights reserved.</p>
-            </div>
-        </div>
-        <script type="text/javascript " src="js/jquery.1.11.1.js "></script>
-        <script type="text/javascript " src="js/bootstrap.js "></script>
-        <script type="text/javascript " src="js/SmoothScroll.js "></script>
-        <script type="text/javascript " src="js/jqBootstrapValidation.js "></script>
-        <script type="text/javascript " src="js/contact_me.js "></script>
-        <script type="text/javascript " src="js/main.js "></script>
-        <script type="text/javascript " src="js/javascript.js "></script>
-
-    </body>
+</body>
 
 </html>
