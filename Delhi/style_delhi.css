@@ -226,7 +226,7 @@ a:focus,
     display: table;
     width: 100%;
     padding: 0;
-    background: url(../img/kolkata/kolkata.jpg) center center no-repeat;
+    background: url(img/delhi.jpg) center center no-repeat;
     background-color: #e5e5e5;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -316,7 +316,7 @@ header .intro-text {
 }
 
 #home .menu-section-title {
-    font-size: 25px;
+    font-size: 40px;
     display: block;
     font-weight: 400;
     color: #444;
