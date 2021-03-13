@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,18 +6,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Go-Travels</title>
-    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="shortcut icon" href="{% static 'img/icon.png' %}">
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
     <!-- Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}">
+<link href="{% static 'https://fonts.googleapis.com/css2?family=Lobster&display=swap' %}" rel="stylesheet">
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com' %}">
+<link href="{% static 'https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap' %}" rel="stylesheet">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700' %}" rel="stylesheet">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' %}" rel="stylesheet">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Rochester' %}" rel="stylesheet">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -28,11 +29,11 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home" class="page-scroll">Events</a></li>
-                    <li><a href="#home" class="page-scroll">Tourism</a></li>
-                    <li><a href="#home" class="page-scroll">Home</a></li>
-                    <li><a href="#home" class="page-scroll">Market</a></li>
-                    <li><a href="#home" class="page-scroll">FAQ</a></li>
+                    <li><a href= "{% static '#home' %}" class="page-scroll">Events</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Tourism</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Home</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Market</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">FAQ</a></li>
                 </ul>
             </div>
         </div>
@@ -71,58 +72,58 @@
         <div class="mydiv" style="text-align: center; ">
             <ul class="myul " style="align-items: center; ">
                 <li class="myli ">
-                    <img src="Images/cheta.jpeg " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <img src= "{% static 'Images/cheta.jpeg' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
                     <h3>DJ Chetas</h3>
                     <p>🕒 07:00 PM (IST)</p>
                     <p>​📅 26th April 2021​</p>
                     <p>Fee: ₹ 1,500 onwards</p>
                     <p class="price "> 📍 Location </p>
-                    <a href="https://thegignight.com/delhi" target="_blank" class="mya mybutton zoom">Explore</a>
+                    <a href="{% static 'https://thegignight.com/delhi' %}" target="_blank" class="mya mybutton zoom">Explore</a>
                 </li>
                 <li class="myli ">
-                    <img src="Images/bros.jpeg " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <img src= "{% static 'Images/bros.jpeg' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
                     <h3>Progressive bros</h3>
                     <p>🕒 12:00 AM (IST)</p>
                     <p>​📅 31st March 2021​</p>
                     <p>Fee: ₹ 3,500 onwards</p>
                     <p class="price ">📍 Location </p>
-                    <a href="https://in.bookmyshow.com/events/soho-x-eventmachine-presents-deborah-de-luca/ET00307421" target="_blank" class="mya mybutton zoom">Explore</a>
+                    <a href="{% static 'https://in.bookmyshow.com/events/soho-x-eventmachine-presents-deborah-de-luca/ET00307421' %}" target="_blank" class="mya mybutton zoom">Explore</a>
                 </li>
                 <li class="myli ">
-                    <img src="Images/events_head.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px; ">
+                    <img src= "{% static 'Images/events_head.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px; ">
                     <h3>DJ Vishesh</h3>
                     <p>🕒 06:00 PM (IST)</p>
                     <p>​📅 15th March 2021​</p>
                     <p>Fee: ₹ 2,000 onwards</p>
                     <p class="price ">📍 Location </p>
-                    <a href="https://in.bookmyshow.com/events/sunburn-holi-weekend-2021-ft-vini-vici-delhi/ET00307727" target="_blank" class="mya mybutton zoom">Explore</a>
+                    <a href= "{% static 'https://in.bookmyshow.com/events/sunburn-holi-weekend-2021-ft-vini-vici-delhi/ET00307727' %}" target="_blank" class="mya mybutton zoom">Explore</a>
                 </li>
                 <li class="myli ">
-                    <img src="Images/zaeden.jpeg " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <img src="{% static 'Images/zaeden.jpeg' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
                     <h3>DJ Zaeden </h3>
                     <p>🕒 07:00 PM (IST)</p>
                     <p>​📅 21st March 2021​</p>
                     <p>Fee: ₹ 2,999 onwards</p>
                     <p class="price ">📍 Location </p>
-                    <a href="https://in.bookmyshow.com/delhi/events/charlotte-de-witte-india-tour/ET00306853?data=similarEvent&" target="_blank" class="mya mybutton zoom">Explore</a>
+                    <a href="{% static 'https://in.bookmyshow.com/delhi/events/charlotte-de-witte-india-tour/ET00306853?data=similarEvent&' %}" target="_blank" class="mya mybutton zoom">Explore</a>
                 </li>
                 <li class="myli ">
-                    <img src="Images/angel.jpg " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <img src= "{% static 'Images/angel.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
                     <h3>Ft. Angel Live</h3>
                     <p>🕒 09:30 PM (IST)</p>
                     <p>​📅 4th March 2021​</p>
                     <p>Fee: ₹ 4,299 onwards</p>
                     <p class="price ">📍 Location </p>
-                    <a href="https://in.bookmyshow.com/events/dj-carnivore-performing-live/ET00307216" target="_blank" class="mya mybutton zoom">Explore</a>
+                    <a href= "{% static 'https://in.bookmyshow.com/events/dj-carnivore-performing-live/ET00307216' %}" target="_blank" class="mya mybutton zoom">Explore</a>
                 </li>
                 <li class="myli ">
-                    <img src="Images/pearl.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <img src="{% static 'Images/pearl.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
                     <h3>DJ Pearl</h3>
                     <p>🕒 08:00 PM (IST)</p>
                     <p>​📅 29th March 2021​</p>
                     <p>Fee: ₹ 3,999 onwards</p>
                     <p class="price ">📍 Location</p>
-                    <a href="https://in.bookmyshow.com/events/biggest-friday-ft-yo-yo-honey-singh/ET00307704" target="_blank" class="mya mybutton zoom">Explore</a>
+                    <a href= "{% static 'https://in.bookmyshow.com/events/biggest-friday-ft-yo-yo-honey-singh/ET00307704' %}" target="_blank" class="mya mybutton zoom">Explore</a>
                 </li>
 
                 <br />
@@ -136,31 +137,31 @@
         </ul>
         <ul class="myul " style="align-items: center; ">
             <li class="myli ">
-                <img src="Images/knotty.jpg " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <img src="{% static 'Images/knotty.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
                 <h3>Knotty Commander Show</h3>
                 <p>🕒 07:30 PM (IST)</p>
                 <p>​📅 29th April 2021​</p>
                 <p>Fee: ₹ 399 onwards</p>
                 <p class="price "> 📍 Location </p>
-                <a href="https://thegignight.com/delhi" target="_blank" class="mya mybutton zoom">Explore</a>
+                <a href= "{% static 'https://thegignight.com/delhi' %}" target="_blank" class="mya mybutton zoom">Explore</a>
             </li>
             <li class="myli ">
-                <img src="Images/gill.jpeg " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <img src="{% static 'Images/gill.jpeg' %}"class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
                 <h3>The Cutie- Kanan Gill</h3>
                 <p>🕒 Weekends (IST)</p>
                 <p>​📅 25th March 2021​</p>
                 <p>Fee: ₹ 399 onwards</p>
                 <p class="price ">📍 Location </p>
-                <a href="https://in.bookmyshow.com/events/soho-x-eventmachine-presents-deborah-de-luca/ET00307421" target="_blank" class="mya mybutton zoom">Explore</a>
+                <a href= "{% static 'https://in.bookmyshow.com/events/soho-x-eventmachine-presents-deborah-de-luca/ET00307421' %}" target="_blank" class="mya mybutton zoom">Explore</a>
             </li>
             <li class="myli ">
-                <img src="Images/vir.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px; ">
+                <img src="{% static 'Images/vir.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px; ">
                 <h3>The GOAT – Vir Das</h3>
                 <p>🕒 06:00 PM (IST)</p>
                 <p>​📅 19th April 2021​</p>
                 <p>Fee: ₹ 150 onwards</p>
                 <p class="price ">📍 Location </p>
-                <a href="https://in.bookmyshow.com/events/sunburn-holi-weekend-2021-ft-vini-vici-delhi/ET00307727" target="_blank" class="mya mybutton zoom">Explore</a>
+                <a href= "{% static 'https://in.bookmyshow.com/events/sunburn-holi-weekend-2021-ft-vini-vici-delhi/ET00307727' %}" target="_blank" class="mya mybutton zoom">Explore</a>
             </li>
 
             <li class="myli">
@@ -173,31 +174,31 @@
           </ul>
           <ul class="myul " style="align-items: center; ">
             <li class="myli ">
-                <img src="Images/skip.jpg " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <img src="{% static 'Images/skip.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
                 <h3>Skip the Line: Indian Classical</h3>
                 <p>🕒 06:30 PM (IST)</p>
                 <p>​📅 27st March 2021​</p>
                 <p>Fee: ₹ 4,455 onwards</p>
                 <p class="price "> 📍 Location </p>
-                <a href="https://thegignight.com/delhi" target="_blank" class="mya mybutton zoom">Explore</a>
+                <a href= "{% static 'https://thegignight.com/delhi' %}" target="_blank" class="mya mybutton zoom">Explore</a>
             </li>
             <li class="myli ">
-                <img src="Images/classic.jpg " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <img src="{% static 'Images/classic.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
                 <h3>The Classical Kathak vibes</h3>
                 <p>🕒 04:00 PM (IST)</p>
                 <p>​📅 27th March 2021​</p>
                 <p>Fee: ₹ 3,966 onwards</p>
                 <p class="price ">📍 Location </p>
-                <a href="https://in.bookmyshow.com/events/soho-x-eventmachine-presents-deborah-de-luca/ET00307421" target="_blank" class="mya mybutton zoom">Explore</a>
+                <a href= "{% static 'https://in.bookmyshow.com/events/soho-x-eventmachine-presents-deborah-de-luca/ET00307421' %}" target="_blank" class="mya mybutton zoom">Explore</a>
             </li>
             <li class="myli ">
-                <img src="Images/night.jpg" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px; ">
+                <img src="{% static 'Images/night.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px; ">
                 <h3>Local Wine Tasting Tour</h3>
                 <p>🕒 06:00 PM (IST)</p>
                 <p>​📅 17th April 2021​</p>
                 <p>Fee: ₹ 1,999 onwards</p>
                 <p class="price ">📍 Location </p>
-                <a href="https://in.bookmyshow.com/events/sunburn-holi-weekend-2021-ft-vini-vici-delhi/ET00307727" target="_blank" class="mya mybutton zoom">Explore</a>
+                <a href= "{% static 'https://in.bookmyshow.com/events/sunburn-holi-weekend-2021-ft-vini-vici-delhi/ET00307727' %}" target="_blank" class="mya mybutton zoom">Explore</a>
             </li>
           </ul>
     </div>
@@ -246,13 +247,13 @@
                 <p>Designed with patience. 🙂 All rights reserved.</p>
             </div>
         </div>
-        <script type="text/javascript " src="js/jquery.1.11.1.js "></script>
-        <script type="text/javascript " src="js/bootstrap.js "></script>
-        <script type="text/javascript " src="js/SmoothScroll.js "></script>
-        <script type="text/javascript " src="js/jqBootstrapValidation.js "></script>
-        <script type="text/javascript " src="js/contact_me.js "></script>
-        <script type="text/javascript " src="js/main.js "></script>
-        <script type="text/javascript " src="js/javascript.js "></script>
+        <script type="text/javascript " src="{% static 'js/jquery.1.11.1.js' %}"></script>
+        <script type="text/javascript " src="{% static 'js/bootstrap.js' %}"></script>
+        <script type="text/javascript " src="{% static 'js/SmoothScroll.js' %}"></script>
+        <script type="text/javascript " src="{% static 'js/jqBootstrapValidation.js %}"></script>
+        <script type="text/javascript " src="{% static 'js/contact_me.js' %}"></script>
+        <script type="text/javascript " src="{% static 'js/main.js' %}"></script>
+        <script type="text/javascript " src="{% static 'js/javascript.js' %}"></script>
 
     </body>
 
