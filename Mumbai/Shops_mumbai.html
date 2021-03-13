@@ -7,12 +7,12 @@
     <title>Go-Travels</title>
     <link rel="shortcut icon" href="img/icon.png">
     <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{% static '../css/bootstrap.css' %}">
     <!-- Stylesheet-->
-    <link rel="stylesheet" type="text/css" href="style_mumbai.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'style_mumbai.css' %}">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700' %}" rel="stylesheet">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' %}" rel="stylesheet">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Rochester' %}" rel="stylesheet">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -24,8 +24,8 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home" class="page-scroll">Home</a></li>
-                    <li><a href="#home" class="page-scroll">Shops</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Home</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Shops</a></li>
                 </ul>
             </div>
         </div>
@@ -61,91 +61,91 @@
         <div class="mydiv" style="text-align: center; ">
             <ul class="myul " style="align-items: center; ">
                 <li class="myli ">
-                    <img src=" img/le mill.jpg" class="myimg zoom" style="height: 210px; width:400px; object-fit: contain;">
+                    <img src="{% static 'img/le mill.jpg' %}" class="myimg zoom" style="height: 210px; width:400px; object-fit: contain;">
                     <h3>Le Mill</h3>
                     <p class="price ">1st Floor, Pheroze Building, Chhatrapati Shivaji Maharaj Marg, above Indigo Deli, Mumbai, Maharashtra 400005</p>
                     <a href="https://www.google.com/maps/place/Le+Mill/@18.9238459,72.8332589,15z/data=!4m2!3m1!1s0x0:0xeb2465ade10781c4?sa=X&ved=2ahUKEwjtnPXKl6XvAhUUILcAHXHLCFgQ_BIwF3oECCoQBQ " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/phoenix.jpg" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
+                    <img src="{% static 'img/phoenix.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
                     <h3>Phoenix Palladium</h3>
                     <p class="price ">462, Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013</p>
                     <a href="https://www.google.com/maps/place/Phoenix+Palladium/@18.994744,72.8245993,15z/data=!4m2!3m1!1s0x0:0x469288721a1d52aa?sa=X&ved=2ahUKEwjrncqomKXvAhW573MBHXxhAvwQ_BIwInoECEMQBQ " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/fashion street.jpg" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
+                    <img src="{% static 'img/fashion street.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
                     <h3>Fashion Street</h3>
                     <p class="price ">New Marine Lines, Churchgate, Mumbai, Maharashtra 400020</p>
                     <a href="https://www.google.com/maps/place/Fashion+Street/@18.9389419,72.8301069,15z/data=!4m5!3m4!1s0x0:0xf6e8e25e40bc7c3b!8m2!3d18.9389419!4d72.8301069 " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/crawford.jpg" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
+                    <img src="{% static 'img'/crawford.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
                     <h3>Crawford Market</h3>
                     <p class="price ">Shoppers Plaza, Ground Floor, Crawford Market, M.J.Phule Market, Lokmanya Tilak Rd, Dhobi Talao, Chhatrapati Shivaji Terminus Area, Fort, Mumbai, Maharashtra 400001</p>
                     <a href="https://www.google.com/maps/place/Crawford+market/@18.9481999,72.8349886,15z/data=!4m2!3m1!1s0x0:0xfface48fb6bfa794?sa=X&ved=2ahUKEwic05u9nKXvAhXac30KHYzRDysQ_BIwK3oECD8QBQ " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/colaba-causeway-market.jpg" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
+                    <img src="{% static 'img/colaba-causeway-market.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
                     <h3>Colaba Market</h3>
                     <p class="price ">Adenwala Rd, Apollo Bandar, Colaba, Mumbai, Maharashtra 400005</p>
                     <a href="https://www.google.com/maps/place/Colaba+Market/@18.9197182,72.8298531,15z/data=!4m5!3m4!1s0x0:0x23743644d17268dc!8m2!3d18.9197182!4d72.8298531 " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/MANGAL-MARKET.jpg.crdownload" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <img src="{% static 'img/MANGAL-MARKET.jpg.crdownload' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
                     <h3>Mangaldas Market</h3>
                     <p class="price ">321 3rd new lane Mangaldas Market 3 rd new lane, Lohar Chawl, Kalbadevi, Mumbai, Maharashtra 400002</p>
                     <a href="https://www.google.com/maps/place/Mangaldas+Market/@18.9480704,72.831662,15z/data=!4m5!3m4!1s0x0:0xb148fe192e9cc5fa!8m2!3d18.9480704!4d72.831662 " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/linking road.jpg" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
+                    <img src="{% static 'img/linking road.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
                     <h3>Linking Road Market</h3>
                     <p class="price ">33rd Rd, Khar, Khar West, Mumbai, Maharashtra 400052</p>
                     <a href="https://www.google.com/maps/place/Linking+Road+Market/@19.0653685,72.8344257,15z/data=!4m5!3m4!1s0x0:0x38fb62625d82de7d!8m2!3d19.0653685!4d72.8344257 " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/bandra street.jpg" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
+                    <img src="{% static 'img/bandra street.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
                     <h3>Bandra Street Market</h3>
                     <p class="price ">4-A, Hill Rd, Sayed Wadi, Ranwar, Bandra West, Mumbai, Maharashtra 400050</p>
                     <a href="https://www.google.com/maps/place/Bandra+Street+Market/@19.0552903,72.8316797,15z/data=!4m5!3m4!1s0x0:0x841f40251dae8823!8m2!3d19.0552903!4d72.8316797 " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/hindmata.jpg" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <img src="{% static 'img/hindmata.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
                     <h3>Hindmata Market</h3>
                     <p class="price ">Dr Baba Saheb Ambedkar Rd, Dadar East, Dadar, Mumbai, Maharashtra 400014</p>
                     <a href="https://www.google.com/maps/place/New+Hindmata+Cloth+Market/@19.0147962,72.8454534,15z/data=!4m5!3m4!1s0x0:0x7ce584acf88d3c46!8m2!3d19.0147962!4d72.8454534 " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/chor bazzar.jpg" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
+                    <img src="{% static 'img/chor bazzar.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
                     <h3>Chor Bazzar</h3>
                     <p class="price ">Chor Bazaar, Mumbai, Maharashtra 400004</p>
                     <a href="https://www.google.com/maps/place/Chor+Bazaar,+Mumbai,+Maharashtra/data=!4m2!3m1!1s0x3be7ce3dfbbf9221:0x556b23b811e7f9eb?sa=X&ved=2ahUKEwi6jKuYn6XvAhXUILcAHSnaD4UQ8gEwHnoECDIQAQ " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/sassoon-goya-journal-cropped-1551427697.jpg" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
+                    <img src="{% static 'img/sassoon-goya-journal-cropped-1551427697.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
                     <h3>Sassoon Dock Fish Market</h3>
                     <p class="price ">Sassoon Dock Rd, Azad Nagar, Colaba, Mumbai, Maharashtra 400005</p>
                     <a href="https://www.google.com/maps/place/Sassoon+Dock+Local+Fish+Market/@18.9122502,72.8254318,15z/data=!4m5!3m4!1s0x0:0xe49a2bfa3feaec0b!8m2!3d18.9122502!4d72.8254318 " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/dadar flower.jpg" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
+                    <img src="{% static 'img/dadar flower.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain;">
                     <h3>Dadar Flower Market</h3>
                     <p class="price ">302, Senapati Bapat Marg, Dadar West, Mumbai, Maharashtra 400028</p>
                     <a href="https://www.google.com/maps/place/Dadar+Flower+Market./@19.0120707,72.8370012,15z/data=!4m2!3m1!1s0x0:0x9e12b54e82466081?sa=X&ved=2ahUKEwjSpP_yoKXvAhUzmuYKHRX1CsUQ_BIwHnoECCsQBQ " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/lal baug.jpg" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain ">
+                    <img src="{% static 'img'/lal baug.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain ">
                     <h3>Lal Baug market</h3>
                     <p class="price ">Dinshaw Petit Rd, Shree Ganesh Nagar, Lal Baug, Parel, Mumbai, Maharashtra 400012</p>
                     <a href="https://www.google.com/maps/place/Lalbaug+Market/@18.9909106,72.8368595,15z/data=!4m5!3m4!1s0x0:0xf9fd1e875e5b7ae7!8m2!3d18.9909106!4d72.8368595 " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/dharavi LM.jpg" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <img src="{% static 'img/dharavi LM.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
                     <h3>Dharavi Leather Market</h3>
                     <p class="price "> Dharavi Depot / Koliwada, H Block BKC, Dharavi, Mumbai, Maharashtra 400017</p>
                     <a href="https://www.google.com/maps/dir/dharavi/mozri+leather+collection,+Shop+No+6,+Opp+Sangam+Galli,+Sion-Bandra+Link+Rd,+Dharavi,+Mumbai,+Maharashtra+400017/@19.0433063,72.8457426,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3be7c8d72abf2d35:0x5ba0b162df2aa82e!2m2!1d72.8537589!2d19.0380334!1m5!1m1!1s0x3be7c8d043492af1:0x12f2397fa64da97b!2m2!1d72.8606435!2d19.0476537 " class="mya mybutton zoom">Visit</a>
                 </li>
                 <li class="myli ">
-                    <img src=" img/zaveri-bazaar-243462.jpg" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <img src="{% static 'img/zaveri-bazaar-243462.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
                     <h3>Zaveri Bazzar</h3>
                     <p class="price ">Kalbadevi
                         Mumbai, Maharashtra 400002</p>
@@ -192,13 +192,13 @@
                 <p>Designed with patience. 🙂 All rights reserved.</p>
             </div>
         </div>
-        <script type="text/javascript " src="js/jquery.1.11.1.js "></script>
-        <script type="text/javascript " src="js/bootstrap.js "></script>
-        <script type="text/javascript " src="js/SmoothScroll.js "></script>
-        <script type="text/javascript " src="js/jqBootstrapValidation.js "></script>
-        <script type="text/javascript " src="js/contact_me.js "></script>
-        <script type="text/javascript " src="js/main.js "></script>
-        <script type="text/javascript " src="js/javascript.js "></script>
+        <script type="text/javascript " src="{% static 'js/jquery.1.11.1.js' %} "></script>
+        <script type="text/javascript " src="{% static 'js/bootstrap.js' %} "></script>
+        <script type="text/javascript " src="{% static 'js/SmoothScroll.js' %} "></script>
+        <script type="text/javascript " src="{% static 'js/jqBootstrapValidation.js' %} "></script>
+        <script type="text/javascript " src="{% static 'js/contact_me.js' %} "></script>
+        <script type="text/javascript " src="{% static 'js/main.js' %} "></script>
+        <script type="text/javascript " src="{% static 'js/javascript.js' %} "></script>
 
     </body>
 
