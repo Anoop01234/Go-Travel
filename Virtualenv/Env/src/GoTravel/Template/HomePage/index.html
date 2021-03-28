@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Go-Travels</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{% static 'Homepage/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'HomePage/css/style.css' %}">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700' %}" rel="stylesheet">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' %}" rel="stylesheet">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Rochester' %}" rel="stylesheet">
+    <style>
+        .intro {
+            display: table;
+            width: 100%;
+            padding: 0;
+            background: url("{% static 'HomePage/img/image-bg.jpg' %}") center center no-repeat;
+            background-color: #e5e5e5;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+    </style>
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation-->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top" style="background-color: black;">
+        <div class="container">
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% static ' ' %}" class="">Home</a></li>
+                    {% if user.is_authenticated %}
+                    <li class=""><a>Hello, {{ user.first_name }}</a></li>
+                    <li><a href="Accounts/logout" class="">Logout</a></li>
+                    {% else %}
+                    <li><a href="Accounts/register" class="">Register</a></li>
+                    <li><a href="Accounts/login" class="">Login</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header id="header">
+        <div class="intro">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="intro-text">
+                            <h1 style="font-family: Rocester;">Go Travels</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home page -->
+
+    <body>
+        <div id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="menu-section">
+                        <h2 class="menu-section-title">About</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mydiv" style="text-align: center; ">
+            <ul class="myul " style="align-items: center; ">
+                <li class="myli ">
+                    <img src="{% static 'HomePage/Images/Delhi.jpg' %} " class="myimg zoom" style="height: 250px; width:400px; ">
+                    <h3>Delhi</h3>
+                    <p class="price "> Capital City</p>
+                    <a href="Delhi/Delhi.html" name="Delhi" class="mya mybutton zoom">Explore</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'HomePage/Images/Mumbai.jpg' %} " class="myimg zoom" style="height: 250px; width:400px; ">
+                    <h3>Mumbai</h3>
+                    <p class="price ">Bollywood City</p>
+                    <a href="Mumbai/Mumbai.html" class="mya mybutton zoom">Explore</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'HomePage/Images/Chennai.jpg' %} " class="myimg zoom" style="height: 250px; width:400px; ">
+                    <h3>Chennai</h3>
+                    <p class="price ">City of Temples</p>
+                    <a href="Chennai/Chennai.html" class="mya mybutton zoom">Explore</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'HomePage/Images/Kolkata.jpg' %} " class="myimg zoom" style="height: 250px; width:400px; ">
+                    <h3>Kolkata</h3>
+                    <p class="price ">City of Joy</p>
+                    <a href="Kolkata/Kolkata.html" class="mya mybutton zoom">Explore</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact " class="text-center ">
+            <div class="container ">
+                <div class="section-title text-center ">
+                    <h3>Send us a message</h3>
+                </div>
+                <div class="col-md-8 col-md-offset-2 ">
+                    <form name="sentMessage " id="contactForm " novalidate>
+                        <div class="row ">
+                            <div class="col-md-6 ">
+                                <div class="form-group ">
+                                    <input type="text " id="name " class="form-control " placeholder="Name " required="required ">
+                                    <p class="help-block text-danger "></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="form-group ">
+                                    <input type="email " id="email " class="form-control " placeholder="Email " required="required ">
+                                    <p class="help-block text-danger "></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <textarea name="message " id="message " class="form-control " rows="4 " placeholder="Message " required></textarea>
+                            <p class="help-block text-danger "></p>
+                        </div>
+                        <div id="success "></div>
+                        <button type="submit " class="btn btn-custom btn-lg ">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div><br><br>
+        <div id="footer ">
+            <div class="container text-center ">
+                <p>Designed with patience. 🙂 All rights reserved.</p>
+            </div>
+        </div>
+    </body>
+
+</html>

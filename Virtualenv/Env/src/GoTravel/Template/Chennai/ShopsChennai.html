@@ -1,0 +1,226 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Go-Travels</title>
+    <link rel="shortcut icon" href="img/icon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{% static 'Chennai/Shops/css/bootstrap.css' %}">
+    <!-- Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="{% static 'Chennai/Shops/css/stylechennai.css' %}">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700' %}" rel="stylesheet">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' %}" rel="stylesheet">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Rochester' %}" rel="stylesheet">
+    <style>
+        .intro {
+            display: table;
+            width: 100%;
+            padding: 0;
+            background: url("{% static 'Chennai/Shops/img/chennai.jpg' %} ") center center no-repeat;
+            background-color: #e5e5e5;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+    </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation-->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top" style="background-color: black;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% static '#home' %}" class="page-scroll">Home</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Shops</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header id="header">
+        <div class="intro">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="intro-text">
+                            <h1>Shops in Chennai</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home page -->
+
+    <body>
+        <div id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="menu-section">
+                        <h2 class="menu-section-title">From local shops selling detailed metal works from Thanjavur, exquisite stone carvings from Mamallapuram, traditional products like Pattamara mats, bronze and brass castings and silver jewellery from Kumbakonam, leaf handicrafts
+                            from Tirunelveli, and shimmering silks from Kanchipuram to well-equipped and enormous malls that feature both global and domestic brands, Chennai doesn’t disappoint its visitors in terms of shopping.
+
+                        </h2>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mydiv" style="text-align: center; ">
+            <ul class="myul " style="align-items: center; ">
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/Ampa Skywalk.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>Ampa Skywalk</h3>
+                    <p class="price ">Ampa Skywalk Mall Office No:1, Nelson Manickam Road, 627, Poonamalee High Road, Aminjikarai, Chennai - 600 029.</p>
+                    <a href="https://www.google.com/maps/place/Ampa+Skywalk/@13.0734711,80.2192545,17z/data=!3m1!4b1!4m8!3m7!1s0x3a5266858b5bbbc7:0xe307a05b529b36a4!5m2!4m1!1i2!8m2!3d13.0734711!4d80.2214432 " class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/chennai city centre.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>Chennai Citi Centre</h3>
+                    <p class="price "> Loganathan Colony, Mylapore, Chennai, Tamil Nadu 600005</p>
+                    <a href="https://www.google.com/maps/dir//Mr.Burger,+4th+,+Floor,+Netz+Cricket,+10%2611,+Chennai+Citi+Center,+Dr+Radha+Krishnan+Salai,+Mylapore,+Chennai,+Tamil+Nadu+600004/@13.0429401,80.2037246,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3a52670eab062c29:0xf9a9161396609401!2m2!1d80.2737651!2d13.0429495 "
+                        class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/express avenue.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>Express Avenue</h3>
+                    <p class="price ">17, Pattullos Rd, Express Estate, Thousand Lights, Chennai, Tamil Nadu 600002</p>
+                    <a href="https://www.google.com/maps/place/Express+Avenue/@13.0584546,80.2641844,15z/data=!4m2!3m1!1s0x0:0x8795a1a0b7a4534b?sa=X&ved=2ahUKEwixvO7x7pbvAhXPVisKHe6RC4sQ_BIwGXoECDIQBQ " class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/T nagar.jpg' %}" class="myimg zoom" style="height: 200px; width:400px; object-fit: contain; ">
+                    <h3 style="margin-top: 60px ;">T-Nagar</h3>
+                    <p class="price ">Thyagaraya Nagar, Chennai, Tamil Nadu 600017.</p>
+                    <a href="https://www.google.com/maps/place/T.+Nagar,+Chennai,+Tamil+Nadu/@13.0425933,80.2211442,14z/data=!3m1!4b1!4m5!3m4!1s0x3a526655a5da2371:0x4954f49743f04af0!8m2!3d13.0417591!4d80.2340761 " class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/VR Chennai.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>VR Chennai</h3>
+                    <p class="price ">Jawaharlal Nehru Rd, Thirumangalam, Anna Nagar, Chennai, Tamil Nadu 600040</p>
+                    <a href="https://www.google.com/maps/place/VR+Chennai/@13.0805465,80.197132,15z/data=!4m2!3m1!1s0x0:0xad2f3f45016d6710?sa=X&ved=2ahUKEwip-Ne875bvAhVnqksFHQykA_gQ_BIwEHoECB8QBQ " class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/Sowcarpet.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>Sowcarpet</h3>
+                    <p class="price ">Sowcarpet, Peddanaickenpet, George Town, Chennai, Tamil Nadu 600001</p>
+                    <a href="https://www.google.com/maps/place/Sowcarpet,+Peddanaickenpet,+George+Town,+Chennai,+Tamil+Nadu+600001/@13.0987353,80.2609464,14z/data=!3m1!4b1!4m5!3m4!1s0x3a526f58c666d0a9:0xbbd2ad42137a1dee!8m2!3d13.0987361!4d80.278456 " class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/ritchie street.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>Ritchie Street</h3>
+                    <p class="price ">Ritchie St, Chintadripet, Chennai, Tamil Nadu 600002</p>
+                    <a href="https://www.google.com/maps/place/Ritchie+St,+Chintadripet,+Chennai,+Tamil+Nadu+600002/@13.0714249,80.2696833,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5266034e350211:0x7cfa3602abca5c75!8m2!3d13.0714249!4d80.271872 " class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/Pondy Bazaar.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>Pondy Bazzar</h3>
+                    <p class="price ">Pondy BazaarParthasarathi Puram, T. Nagar, Chennai, Tamil Nadu 600017
+                    </p>
+                    <a href="https://www.google.com/maps/place/Pondy+Bazaar,+Parthasarathi+Puram,+T.+Nagar,+Chennai,+Tamil+Nadu+600017/@13.0400132,80.2338103,17z/data=!3m1!4b1!4m5!3m4!1s0x3a526655cd52d36b:0xd50c3122ba1c4313!8m2!3d13.0398891!4d80.2368745 " class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/Pantheon Road.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>Pantheon Road</h3>
+                    <p class="price ">Pantheon RdEgmore, Chennai, Tamil Nadu 600008
+                    </p>
+                    <a href="https://www.google.com/maps/place/Pantheon+Rd,+Egmore,+Chennai,+Tamil+Nadu+600008/@13.0719764,80.2574824,17z/data=!3m1!4b1!4m5!3m4!1s0x3a5266128e8a3bcb:0x5944e950efcda451!8m2!3d13.0719764!4d80.2596711 " class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/Moore Market.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>Moore Market</h3>
+                    <p class="price ">3 Elephant Gate Bridge, Road, Kannappar Thidal, Periyamet, Chennai, Tamil Nadu 600003</p>
+                    <a href="https://www.google.com/maps/place/Moore+Market/@13.0911603,80.2712459,15z/data=!4m2!3m1!1s0x0:0xf3580384dfecf476?sa=X&ved=2ahUKEwiyg5m08ZbvAhUazjgGHYbaAMUQ_BIwInoECDUQBQ " class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/kottivakkam.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>Kottivakkam</h3>
+                    <p class="price ">Swaminathan Nagar, Kottivakkam, Chennai, Tamil Nadu 600041</p>
+                    <a href="https://www.google.com/maps/place/Kottivakkam,+Chennai,+Tamil+Nadu+600041/data=!4m2!3m1!1s0x3a525d3f350881bf:0xfd42f56198937c93?sa=X&ved=2ahUKEwjj8ILE8ZbvAhW5wjgGHU9CDMcQ8gEwAHoECAUQAQ " class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/Godown street.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>Godown Street</h3>
+                    <p class="price ">Godown StreetGeorge Town, Chennai, Tamil Nadu 600001
+                    </p>
+                    <a href="https://www.google.com/maps/place/Godown+Street,+George+Town,+Chennai,+Tamil+Nadu+600001/data=!4m2!3m1!1s0x3a526f50d313d7f7:0xcb919c80d076fb83?sa=X&ved=2ahUKEwjjhKPz8ZbvAhU_wTgGHc-9DMEQ8gEwAHoECBEQAQ " class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/George Town.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>Gearge Town</h3>
+                    <p class="price ">George TownChennai, Tamil Nadu 600001
+                    </p>
+                    <a href="https://www.google.com/maps/place/Godown+Street,+George+Town,+Chennai,+Tamil+Nadu+600001/@13.0905212,80.2800698,17z/data=!3m1!4b1!4m5!3m4!1s0x3a526f50d313d7f7:0xcb919c80d076fb83!8m2!3d13.0905212!4d80.2822585 " class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/phoenix market city.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>Phoenix Market city</h3>
+                    <p class="price ">142, Velachery Rd, Indira Gandhi Nagar, Velachery, Chennai, Tamil Nadu 600042</p>
+                    <a href="https://www.google.com/maps/place/Phoenix+Marketcity/@12.9905058,80.2169764,15z/data=!4m5!3m4!1s0x0:0xdb3a29009036c251!8m2!3d12.9905058!4d80.2169764 " class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Chennai/Shops/img/panagal park.jpg' %}" class="myimg zoom" style="height: 250px; width:400px; object-fit: contain; ">
+                    <h3>Panagal Park</h3>
+                    <p class="price ">Nageshwara Rao Road, Parthasarathi Puram, T. Nagar, Chennai, Tamil Nadu 600017</p>
+                    <a href="https://www.google.com/maps/place/Panagal+Park/@13.0412089,80.2332009,15z/data=!4m5!3m4!1s0x0:0xf173a375f3a14a97!8m2!3d13.0412089!4d80.2332009 " class="mya mybutton zoom">Visit</a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact " class="text-center ">
+            <div class="container ">
+                <div class="section-title text-center ">
+                    <h3>Send us a message</h3>
+                </div>
+                <div class="col-md-8 col-md-offset-2 ">
+                    <form name="sentMessage " id="contactForm " novalidate>
+                        <div class="row ">
+                            <div class="col-md-6 ">
+                                <div class="form-group ">
+                                    <input type="text " id="name " class="form-control " placeholder="Name " required="required ">
+                                    <p class="help-block text-danger "></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                                <div class="form-group ">
+                                    <input type="email " id="email " class="form-control " placeholder="Email " required="required ">
+                                    <p class="help-block text-danger "></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <textarea name="message " id="message " class="form-control " rows="4 " placeholder="Message " required></textarea>
+                            <p class="help-block text-danger "></p>
+                        </div>
+                        <div id="success "></div>
+                        <button type="submit " class="btn btn-custom btn-lg ">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div><br><br>
+        <div id="footer ">
+            <div class="container text-center ">
+                <p>Designed with patience. 🙂 All rights reserved.</p>
+            </div>
+        </div>
+        <script type="text/javascript " src="{% static 'js/jquery.1.11.1.js' %} "></script>
+        <script type="text/javascript " src="{% static 'js/bootstrap.js' %} "></script>
+        <script type="text/javascript " src="{% static 'js/SmoothScroll.js' %} "></script>
+        <script type="text/javascript " src="{% static 'js/jqBootstrapValidation.js' %} "></script>
+        <script type="text/javascript " src="{% static 'js/contact_me.js' %} "></script>
+        <script type="text/javascript " src="{% static 'js/main.js' %} "></script>
+        <script type="text/javascript " src="{% static 'js/javascript.js' %} "></script>
+
+    </body>
+
+</html>
