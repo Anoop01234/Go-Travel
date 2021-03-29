@@ -11,4 +11,4 @@ Here we'll have events for 4 metropolitan cities i.e. Delhi Mumbai, Chennai and 
 ### Shops and markets
 Here we'll have shops and makrkets for 4 metropolitan cities i.e. Delhi Mumbai, Chennai and Kolkata, So basically you'll be making 4 webpages i.e. one for one respective city.
 
-.
+
