@@ -11,15 +11,14 @@ html {
     background-color: rgb(255, 246, 238);
 }
 
-
-.event1{
-  text-align: center;
+.event1 {
+    text-align: center;
 }
 
-.event2{
-  position: absolute;
-  margin-top:1200px;
-  margin-left: 280px;
+.event2 {
+    position: absolute;
+    margin-top: 1200px;
+    margin-left: 280px;
 }
 
 h1,
@@ -298,7 +297,6 @@ header .intro-text {
     height: auto;
     background-size: cover;
     height: 570px;
-
 }
 
 #about p {

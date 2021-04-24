@@ -85,8 +85,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Travel',
-        'USER': '',
-        'PASSWORD': '',
+        'USER': 'postgres',
+        'PASSWORD': 'anoop2750',
         'HOST': 'localhost'
     }
 }
@@ -132,5 +132,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'Static')
 ]
-MEDIA_URL='/Delhi/Restaurants/Images/'
-MEDIA_ROOT=os.path.join(BASE_DIR,'StaDelhi/Restaurants/Images')
+MEDIA_URL='/Images/'
+MEDIA_ROOT=os.path.join(BASE_DIR,'Images')

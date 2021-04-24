@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse,HttpResponseRedirect
-from .models import DelhiRestaurant
+from .models import DelhiRestaurant, ChennaiRestaurants
 # Create your views here
 def index(request):
     return  render(request,'HomePage/index.html')

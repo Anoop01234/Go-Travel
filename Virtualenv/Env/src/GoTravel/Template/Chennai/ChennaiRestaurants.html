@@ -1,4 +1,4 @@
-{% load static %}
+{% load static %} {% static "Chennai/Restaurants" as baseUrl %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,18 +18,18 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation-->
-    <nav id="menu" class="navbar navbar-default navbar-fixed-top" style="background-color: black; opacity: 0.7">
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top" style="background-color: black; opacity: 0.8;">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home" class="page-scroll">Events</a></li>
-                    <li><a href="#home" class="page-scroll">Tourism</a></li>
-                    <li><a href="#home" class="page-scroll">Home</a></li>
-                    <li><a href="#home" class="page-scroll">Market</a></li>
-                    <li><a href="#home" class="page-scroll">FAQ</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Events</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Tourism</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Home</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Market</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">FAQ</a></li>
                 </ul>
             </div>
         </div>
@@ -41,7 +41,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="intro-text">
-                            <h1>Restaurnats in Chennai</h1>
+                            <h1>Restaurants in Chennai</h1>
                         </div>
                     </div>
                 </div>
@@ -153,42 +153,25 @@
                     <p class="price ">📍 Location</p>
                     <a href="https://www.eazydiner.com/chennai/urban-spatula-anna-nagar-west-chennai-648392?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Book a Table</a>
                 </li>
+                {% for rest in rests1 %}
+                <li class="myli ">
+                    <img src="{{rest1.img.url}}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>{{rest1.name}}</h3>
+                    <p class="price ">📍 {{rest1.location}}</p>
+                    <a href=" {{ rest1.hreftag }}" target="_blank" class="mya mybutton zoom">Book a Table</a>
+                </li>
+                {% endfor %}
             </ul>
         </div>
 
-        <!-- Contact Section -->
-        <div id="contact " class="text-center ">
-            <div class="container ">
-                <div class="section-title text-center ">
-                    <h3>Send us a message</h3>
-                </div>
-                <div class="col-md-8 col-md-offset-2 ">
-                    <form name="sentMessage " id="contactForm " novalidate>
-                        <div class="row ">
-                            <div class="col-md-6 ">
-                                <div class="form-group ">
-                                    <input type="text " id="name " class="form-control " placeholder="Name " required="required ">
-                                    <p class="help-block text-danger "></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 ">
-                                <div class="form-group ">
-                                    <input type="email " id="email " class="form-control " placeholder="Email " required="required ">
-                                    <p class="help-block text-danger "></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group ">
-                            <textarea name="message " id="message " class="form-control " rows="4 " placeholder="Message " required></textarea>
-                            <p class="help-block text-danger "></p>
-                        </div>
-                        <div id="success "></div>
-                        <button type="submit " class="btn btn-custom btn-lg ">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div><br><br>
         <div id="footer ">
+            <div id="contact " class="text-center ">
+                <div class="container ">
+
+                    <div class="col-md-8 col-md-offset-2 ">
+                    </div>
+                </div>
+            </div><br><br>
             <div class="container text-center ">
                 <p>Designed with patience. 🙂 All rights reserved.</p>
             </div>

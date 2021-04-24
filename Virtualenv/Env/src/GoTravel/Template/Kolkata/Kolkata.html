@@ -31,14 +31,18 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation-->
-    <nav id="menu" class="navbar navbar-default navbar-fixed-top" style="background-color: black;">
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top" style="background-color: black; opacity: 0.8;">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="#home" class="page-scroll">Home</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Events</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Tourism</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Home</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">Market</a></li>
+                    <li><a href="{% static '#home' %}" class="page-scroll">FAQ</a></li>
                 </ul>
             </div>
         </div>
@@ -75,19 +79,16 @@
                 <li class="myli ">
                     <img src="{% static 'Kolkata/KolkataHomePage/Images/Event.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; ">
                     <h3>Events</h3>
-                    <p class="price "> Sub Heading</p>
                     <a href="EventsKolkata.html" class="mya mybutton zoom">Let's Explore</a>
                 </li>
                 <li class="myli ">
                     <img src="{% static 'Kolkata/KolkataHomePage/Images/Place.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; ">
                     <h3>Places to Visit</h3>
-                    <p class="price ">Sub Heading</p>
                     <a href="PlacesKolkata.html" class="mya mybutton zoom">Let's Explore</a>
                 </li>
                 <li class="myli ">
                     <img src="{% static 'Kolkata/KolkataHomePage/Images/Restaurants.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; ">
                     <h3>Restaurants</h3>
-                    <p class="price ">Sub Heading</p>
                     <a href="KolkataRestaurants.html" name="KolkataRestaurants" class="mya mybutton zoom">Let's Explore</a>
                 </li>
             </ul>
@@ -95,50 +96,21 @@
                 <li class="myli2 " width=50%>
                     <img src="{% static 'Kolkata/KolkataHomePage/Images/Shop.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; ">
                     <h3>Shops and Markets</h3>
-                    <p class="price ">Sub Heading</p>
                     <a href="ShopsKolkata.html" class="mya mybutton zoom">Let's Explore</a>
                 </li>
                 <li class="myli2 " width=50%>
                     <img src="{% static 'Kolkata/KolkataHomePage/Images/Faq.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; ">
                     <h3>FAQs</h3>
-                    <p class="price ">Sub Heading</p>
                     <a href=" " class="mya mybutton zoom">Let's Explore</a>
                 </li>
 
             </ul>
         </div>
-        <!-- Contact Section -->
-
         <div id="footer ">
             <div id="contact " class="text-center ">
                 <div class="container ">
 
                     <div class="col-md-8 col-md-offset-2 ">
-                        <form name="sentMessage " id="contactForm " novalidate>
-                            <div class="section-title text-center ">
-                                <h3>Send us a message</h3>
-                            </div>
-                            <div class="row ">
-                                <div class="col-md-6 ">
-                                    <div class="form-group ">
-                                        <input type="text " id="name " class="form-control " placeholder="Name " required="required ">
-                                        <p class="help-block text-danger "></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 ">
-                                    <div class="form-group ">
-                                        <input type="email " id="email " class="form-control " placeholder="Email " required="required ">
-                                        <p class="help-block text-danger "></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group ">
-                                <textarea name="message " id="message " class="form-control " rows="4 " placeholder="Message " required></textarea>
-                                <p class="help-block text-danger "></p>
-                            </div>
-                            <div id="success "></div>
-                            <button type="submit " class="btn btn-custom btn-lg ">Send Message</button>
-                        </form>
                     </div>
                 </div>
             </div><br><br>
