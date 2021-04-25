@@ -27,8 +27,9 @@ def ShopsMumbai(request):
     return render(request,'Mumbai/ShopsMumbai.html')
 def Chennai(request):
     return render(request,'Chennai/Chennai.html')
-def ChennaiRestaurants(request):
-    return render(request,'Chennai/ChennaiRestaurants.html')
+def ChennaiRestaurant(request):
+    rests=ChennaiRestaurants.objects.all()
+    return render(request,'Chennai/ChennaiRestaurants.html',{'rests': rests})
 def PlacesChennai(request):
     return render(request,'Chennai/PlacesChennai.html')
 def EventsChennai(request):
@@ -45,3 +46,12 @@ def EventsKolkata(request):
     return render(request,'Kolkata/EventsKolkata.html')
 def ShopsKolkata(request):
     return render(request,'Kolkata/ShopsKolkata.html')
+
+def contact(request):
+    if request.method == "POST":
+        message_name = request.POST['message-name']
+        message_email = request.POST['message-email']
+        message   = request.POST['message']
+        return render(request,"index.html",{'message_name':message_name})
+    else:
+        return render(request,"index.html",{})

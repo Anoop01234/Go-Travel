@@ -153,12 +153,12 @@
                     <p class="price ">📍 Location</p>
                     <a href="https://www.eazydiner.com/chennai/urban-spatula-anna-nagar-west-chennai-648392?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Book a Table</a>
                 </li>
-                {% for rest in rests1 %}
+                {% for rest in rests %}
                 <li class="myli ">
-                    <img src="{{rest1.img.url}}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>{{rest1.name}}</h3>
-                    <p class="price ">📍 {{rest1.location}}</p>
-                    <a href=" {{ rest1.hreftag }}" target="_blank" class="mya mybutton zoom">Book a Table</a>
+                    <img src="{{rest.img.url}}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>{{rest.name}}</h3>
+                    <p class="price ">📍 {{rest.location}}</p>
+                    <a href=" {{ rest.hreftag }}" target="_blank" class="mya mybutton zoom">Book a Table</a>
                 </li>
                 {% endfor %}
             </ul>
