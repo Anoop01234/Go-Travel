@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse,HttpResponseRedirect
-from .models import DelhiRestaurant, ChennaiRestaurants, MumbaiRestaurants, KolkataRestaurants
+from .models import DelhiRestaurant, ChennaiRestaurants, MumbaiRestaurants, KolkataRestaurants, PlacesMumbai, PlacesDelhi, PlacesChennai, PlacesKolkata
 # Create your views here
 def index(request):
     return  render(request,'HomePage/index.html')
@@ -9,8 +9,9 @@ def Delhi(request):
 def DelhiRestaurants(request):
     rests=DelhiRestaurant.objects.all()
     return render(request,'Delhi/DelhiRestaurants.html',{'rests': rests})
-def PlacesDelhi(request):
-    return render(request,'Delhi/PlacesDelhi.html')
+def PlaceDelhi(request):
+    rests=PlacesDelhi.objects.all()
+    return render(request,'Mumbai/PlacesDelhi.html',{'rests': rests})
 def EventsDelhi(request):
     return render(request,'Delhi/EventsDelhi.html')
 def ShopsDelhi(request):
@@ -20,8 +21,9 @@ def Mumbai(request):
 def MumbaiRestaurant(request):
     rests=MumbaiRestaurants.objects.all()
     return render(request,'Mumbai/MumbaiRestaurants.html',{'rests': rests})
-def PlacesMumbai(request):
-    return render(request,'Mumbai/PlacesMumbai.html')
+def PlaceMumbai(request):
+    rests=PlacesMumbai.objects.all()
+    return render(request,'Mumbai/PlacesMumbai.html',{'rests': rests})
 def EventsMumbai(request):
     return render(request,'Mumbai/EventsMumbai.html')
 def ShopsMumbai(request):
@@ -31,8 +33,9 @@ def Chennai(request):
 def ChennaiRestaurant(request):
     rests=ChennaiRestaurants.objects.all()
     return render(request,'Chennai/ChennaiRestaurants.html',{'rests': rests})
-def PlacesChennai(request):
-    return render(request,'Chennai/PlacesChennai.html')
+def PlaceChennai(request):
+    rests=PlacesChennai.objects.all()
+    return render(request,'Chennai/PlacesChennai.html',{'rests': rests})
 def EventsChennai(request):
     return render(request,'Chennai/EventsChennai.html')
 def ShopsChennai(request):
@@ -42,8 +45,9 @@ def Kolkata(request):
 def KolkataRestaurant(request):
     rests=KolkataRestaurants.objects.all()
     return render(request,'Kolkata/KolkataRestaurants.html',{'rests': rests})
-def PlacesKolkata(request):
-    return render(request,'Kolkata/PlacesKolkata.html')
+def PlaceKolkata(request):
+    rests=PlacesKolkata.objects.all()
+    return render(request,'Kolkata/PlacesKolkata.html',{'rests': rests})
 def EventsKolkata(request):
     return render(request,'Kolkata/EventsKolkata.html')
 def ShopsKolkata(request):

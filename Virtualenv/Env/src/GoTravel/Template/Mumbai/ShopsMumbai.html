@@ -169,7 +169,14 @@
                     <p class="price ">Kalbadevi Mumbai, Maharashtra 400002</p>
                     <a href="https://www.google.com/maps/place/Zaveri+Bazaar,+Kalbadevi,+Mumbai,+Maharashtra+400002/@18.949469,72.8286358,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7ce223285e293:0x89585c70691716b4!8m2!3d18.9495056!4d72.8304999 " class="mya mybutton zoom">Visit</a>
                 </li>
-
+                {% for rest in rests %}
+                <li class="myli ">
+                    <img src="{{rest.img.url}}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>{{rest.name}}</h3>
+                    <p class="price ">📍 {{rest.location}}</p>
+                    <a href=" {{ rest.hreftag }}" target="_blank" class="mya mybutton zoom">Book a Table</a>
+                </li>
+                {% endfor %}
             </ul>
         </div>
         <div id="footer ">

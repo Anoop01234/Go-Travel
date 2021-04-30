@@ -171,7 +171,14 @@
                     <p class="price ">26, Ring Rd, South Extension, Block G, South Extension I, New Delhi, Delhi 110049</p>
                     <a href="https://www.google.com/maps/place/South+Extension+1+Market/@28.5683076,77.2131353,15z/data=!4m8!1m2!2m1!1ssouth+extension+market+address!3m4!1s0x390ce25d00442827:0x9e1f247402bb30ae!8m2!3d28.5688652!4d77.2204278 " class="mya mybutton zoom">Visit</a>
                 </li>
-
+                {% for rest in rests %}
+                <li class="myli ">
+                    <img src="{{rest.img.url}}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>{{rest.name}}</h3>
+                    <p class="price ">📍 {{rest.location}}</p>
+                    <a href=" {{ rest.hreftag }}" target="_blank" class="mya mybutton zoom">Book a Table</a>
+                </li>
+                {% endfor %}
             </ul>
         </div>
         <br><br>

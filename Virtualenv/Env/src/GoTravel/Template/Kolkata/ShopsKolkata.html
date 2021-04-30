@@ -170,7 +170,14 @@
                     <p class="price ">375, Prince Anwar Shah Rd, South City Complex, Jadavpur, Kolkata, West Bengal 700068</p>
                     <a href="https://www.google.com/maps/place/South+City+Mall/@22.501714,88.3617386,15z/data=!4m2!3m1!1s0x0:0xee3d107a198d3cdf?sa=X&ved=2ahUKEwic9v3Mj6XvAhVAH7cAHZ_GAgQQ_BIwH3oECDcQBQ " class="mya mybutton zoom">Visit</a>
                 </li>
-
+                {% for rest in rests %}
+                <li class="myli ">
+                    <img src="{{rest.img.url}}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>{{rest.name}}</h3>
+                    <p class="price ">📍 {{rest.location}}</p>
+                    <a href=" {{ rest.hreftag }}" target="_blank" class="mya mybutton zoom">Book a Table</a>
+                </li>
+                {% endfor %}
             </ul>
         </div>
         <div id="footer ">

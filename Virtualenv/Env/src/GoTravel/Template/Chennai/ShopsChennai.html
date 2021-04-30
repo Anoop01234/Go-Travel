@@ -175,7 +175,14 @@
                     <p class="price ">Nageshwara Rao Road, Parthasarathi Puram, T. Nagar, Chennai, Tamil Nadu 600017</p>
                     <a href="https://www.google.com/maps/place/Panagal+Park/@13.0412089,80.2332009,15z/data=!4m5!3m4!1s0x0:0xf173a375f3a14a97!8m2!3d13.0412089!4d80.2332009 " class="mya mybutton zoom">Visit</a>
                 </li>
-
+                {% for rest in rests %}
+                <li class="myli ">
+                    <img src="{{rest.img.url}}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>{{rest.name}}</h3>
+                    <p class="price ">📍 {{rest.location}}</p>
+                    <a href=" {{ rest.hreftag }}" target="_blank" class="mya mybutton zoom">Book a Table</a>
+                </li>
+                {% endfor %}
             </ul>
         </div>
         <div id="footer ">

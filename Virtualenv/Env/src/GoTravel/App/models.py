@@ -21,3 +21,23 @@ class KolkataRestaurants(models.Model):
     img = models.ImageField(upload_to="Images/Kolkata/Restaurants")
     location = models.TextField()
     hreftag = models.TextField()
+class PlacesMumbai(models.Model):
+    name = models.CharField(max_length=100)
+    img = models.ImageField(upload_to="Images/Mumbai/Places")
+    location = models.TextField()
+    hreftag = models.TextField()
+class PlacesDelhi(models.Model):
+    name = models.CharField(max_length=100)
+    img = models.ImageField(upload_to="Images/Delhi/Places")
+    location = models.TextField()
+    hreftag = models.TextField()
+class PlacesChennai(models.Model):
+    name = models.CharField(max_length=100)
+    img = models.ImageField(upload_to="Images/Chennai/Places")
+    location = models.TextField()
+    hreftag = models.TextField()
+class PlacesKolkata(models.Model):
+    name = models.CharField(max_length=100)
+    img = models.ImageField(upload_to="Images/Kolkata/Places")
+    location = models.TextField()
+    hreftag = models.TextField()
