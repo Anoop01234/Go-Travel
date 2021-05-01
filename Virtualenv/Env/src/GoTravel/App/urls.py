@@ -3,6 +3,7 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('contact.html', views.contact, name='contact'),
     path('Delhi/Delhi.html',views.Delhi,name='Delhi'),
     path('Delhi/DelhiRestaurants.html',views.DelhiRestaurants,name='DelhiRestaurants'),
     path('Delhi/PlacesDelhi.html',views.PlaceDelhi,name='PlacesDelhi'),
@@ -23,5 +24,8 @@ urlpatterns = [
     path('Kolkata/PlacesKolkata.html',views.PlaceKolkata,name='PlacesKolkata'),
     path('Kolkata/EventsKolkata.html',views.EventKolkata,name='EventsKolkata'),
     path('Kolkata/ShopsKolkata.html',views.ShopKolkata,name='ShopsKolkata'),
-
+    path("Delhi/faq.html", views.faq , name="FAQ"),
+    path("Mumbai/faq.html", views.faq , name="FAQ"),
+    path("Chennai/faq.html", views.faq , name="FAQ"),
+    path("Kolkata/faq.html", views.faq , name="FAQ"),
 ]

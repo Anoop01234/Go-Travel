@@ -7,9 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Go Travel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="FREEHTML5.CO" />
     <link rel="shortcut icon" href=" {% static ' Homepage/favicon.ico ' %}">
     <link rel="stylesheet" href="{% static 'Homepage/css/animate.css ' %}">
     <link rel="stylesheet" href="{% static 'Homepage/css/icomoon.css' %}">
@@ -18,18 +15,6 @@
     <link rel="stylesheet" href="{% static 'Homepage/css/style.css ' %}">
     <script src="{% static 'Homepage/js/modernizr-2.6.2.min.js ' %}"></script>
 </head>
-
-<style>
-    .fh5co-loader {
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        z-index: 9999;
-        background: url("{% static 'Homepage/images/hourglass.svg ' %}") center no-repeat #f1ecec;
-    }
-</style>
 
 <body>
     <div id="fh5co-wrapper">
@@ -43,7 +28,7 @@
                             <nav id="fh5co-menu-wrap" role="navigation">
                                 <ul class="sf-menu" id="fh5co-primary-menu">
                                     <li class="active">
-                                        <a href="{% static 'Homepage/index.html ' %}">Home</a>
+                                        <a href="#">Home</a>
                                     </li>
                                     {% if user.is_authenticated %}
                                     <li class=""><a>Hello , {{ user.first_name }}</a></li>
@@ -68,40 +53,38 @@
                 <div class="fh5co-overlay"></div>
                 <div class="fh5co-cover text-center intro" data-stellar-background-ratio="0.5">
                     <div class="desc animate-box">
-                        <h2>Travel Around The World.</h2>
+                        <h2>Travel Around The World</h2>
                     </div>
                 </div>
-
             </div>
             <div class="fh5co-listing">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-sm-6 fh5co-item-wrap">
                             <a class="fh5co-listing-item">
-                                <img src="{% static 'Homepage/images/Delhi.jpg '%} " style="height: 500px; width:800px; " alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive">
+                                <img src="{% static 'Homepage/images/Delhi.jpg '%} " style="height: 500px; width:800px; " alt="" class="img-responsive">
                                 <div class="fh5co-listing-copy">
-                                    <h2 style="text-align: center;"><a href="Delhi/Delhi.html">Explore Delhi</a></h2>
-
+                                    <h2 style="text-align: center; font-family:'Times New Roman', Times, serif" "><a href="Delhi/Delhi.html ">Explore Delhi</a></h2>
                                 </div>
                             </a>
                         </div>
 
-                        <div class="col-md-6 col-sm-6 fh5co-item-wrap">
-                            <a class="fh5co-listing-item">
-                                <img src="{% static 'Homepage/images/Mumbai.jpg ' %}" style="height: 500px; width:800px; " alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive">
-                                <div class="fh5co-listing-copy">
-                                    <h2 style="text-align: center;"><a href="Mumbai/Mumbai.html">Explore Mumbai</a></h2>
+                        <div class="col-md-6 col-sm-6 fh5co-item-wrap ">
+                            <a class="fh5co-listing-item ">
+                                <img src="{% static 'Homepage/images/Mumbai.jpg ' %} " style="height: 500px; width:800px; " alt=" " class="img-responsive ">
+                                <div class="fh5co-listing-copy ">
+                                    <h2 style="text-align: center; font-family: 'Times New Roman', Times, serif "><a href="Mumbai/Mumbai.html ">Explore Mumbai</a></h2>
 
                                 </div>
                             </a>
                         </div>
                         <!-- END 3 row -->
 
-                        <div class="col-md-6 col-sm-6 fh5co-item-wrap">
-                            <a class="fh5co-listing-item">
-                                <img src="{% static 'Homepage/images/Chennai.jpg' %}" style="height: 500px; width:800px; " alt="Free HTML5 Bootstrap Template by FreeHTML5.co" class="img-responsive">
-                                <div class="fh5co-listing-copy">
-                                    <h2 style="text-align: center;"><a href="Chennai/Chennai.html">Explore Chennai</a></h2>
+                        <div class="col-md-6 col-sm-6 fh5co-item-wrap ">
+                            <a class="fh5co-listing-item ">
+                                <img src="{% static 'Homepage/images/Chennai.jpg' %} " style="height: 500px; width:800px; " alt=" " class="img-responsive ">
+                                <div class="fh5co-listing-copy ">
+                                    <h2 style="text-align: center; font-family: 'Times New Roman', Times, serif ""><a href="Chennai/Chennai.html">Explore Chennai</a></h2>
 
                                 </div>
                             </a>
@@ -111,7 +94,7 @@
                             <a class="fh5co-listing-item">
                                 <img src="{% static 'Homepage/images/Kolkata.jpg' %}" style="height: 500px; width:800px; " alt="" class="img-responsive">
                                 <div class="fh5co-listing-copy">
-                                    <h2 style="text-align: center;"><a href="Kolkata/Kolkata.html">Explore Kolkata</a></h2>
+                                    <h2 style="text-align: center; font-family:'Times New Roman', Times, serif" "><a href="Kolkata/Kolkata.html ">Explore Kolkata</a></h2>
 
                                 </div>
                             </a>
@@ -123,10 +106,10 @@
                 </div>
             </div>
             <footer>
-                <div id="footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3 text-center">
+                <div id="footer ">
+                    <div class="container ">
+                        <div class="row ">
+                            <div class="col-md-6 col-md-offset-3 text-center ">
                                 <p>Designed with patience. 🙂 All rights reserved. </p>
                             </div>
                         </div>
@@ -135,14 +118,14 @@
             </footer>
         </div>
     </div>
-    <script src="{% static 'Homepage/js/jquery.min.js ' %}"></script>
-    <script src="{% static 'Homepage/js/jquery.easing.1.3.js' %}"></script>
-    <script src="{% static 'Homepage/js/bootstrap.min.js ' %}"></script>
-    <script src="{% static 'Homepage/js/jquery.waypoints.min.js' %}"></script>
-    <script src="{% static 'Homepage/js/jquery.stellar.min.js' %}"></script>
-    <script src="{% static 'Homepage/js/hoverIntent.js' %}"></script>
-    <script src="{% static 'Homepage/js/superfish.js' %}"></script>
-    <script src="{% static 'Homepage/js/main.js' %}"></script>
+    <script src="{% static 'Homepage/js/jquery.min.js ' %} "></script>
+    <script src="{% static 'Homepage/js/jquery.easing.1.3.js' %} "></script>
+    <script src="{% static 'Homepage/js/bootstrap.min.js ' %} "></script>
+    <script src="{% static 'Homepage/js/jquery.waypoints.min.js' %} "></script>
+    <script src="{% static 'Homepage/js/jquery.stellar.min.js' %} "></script>
+    <script src="{% static 'Homepage/js/hoverIntent.js' %} "></script>
+    <script src="{% static 'Homepage/js/superfish.js' %} "></script>
+    <script src="{% static 'Homepage/js/main.js' %} "></script>
 
 </body>
 

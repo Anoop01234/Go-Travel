@@ -60,12 +60,21 @@ def EventKolkata(request):
 def ShopKolkata(request):
     rests=ShopsKolkata.objects.all()
     return render(request,'Kolkata/ShopsKolkata.html',{'rests': rests})
+def faq(request):
+    return render(request,'Delhi/faq.html')
+def faq(request):
+    return render(request,'Mumbai/faq.html')
+def faq(request):
+    return render(request,'Chennai/faq.html')
+def faq(request):
+    return render(request,'Kolkata/faq.html')
+
 
 def contact(request):
     if request.method == "POST":
         message_name = request.POST['message-name']
         message_email = request.POST['message-email']
         message   = request.POST['message']
-        return render(request,"index.html",{'message_name':message_name})
+        return render(request,"HomePage/contact.html",{'message_name':message_name})
     else:
-        return render(request,"index.html",{})
+        return render(request,"HomePage/contact.html",{})
