@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import DelhiRestaurant, ChennaiRestaurants, MumbaiRestaurants, KolkataRestaurants, PlacesMumbai, PlacesDelhi, PlacesChennai, PlacesKolkata, EventsDelhi, EventsChennai, EventsKolkata, EventsMumbai
+from .models import DelhiRestaurant, ChennaiRestaurants, MumbaiRestaurants, KolkataRestaurants, PlacesMumbai, PlacesDelhi, PlacesChennai, PlacesKolkata, EventsDelhi, EventsChennai, EventsKolkata, EventsMumbai, ShopsDelhi, ShopsChennai, ShopsKolkata, ShopsMumbai
 # Register your models here.
 
 admin.site.register(DelhiRestaurant)
@@ -14,3 +14,7 @@ admin.site.register(EventsDelhi)
 admin.site.register(EventsChennai)
 admin.site.register(EventsKolkata)
 admin.site.register(EventsMumbai)
+admin.site.register(ShopsDelhi)
+admin.site.register(ShopsChennai)
+admin.site.register(ShopsKolkata)
+admin.site.register(ShopsMumbai)
