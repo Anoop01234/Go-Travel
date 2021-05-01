@@ -41,3 +41,23 @@ class PlacesKolkata(models.Model):
     img = models.ImageField(upload_to="Images/Kolkata/Places")
     location = models.TextField()
     hreftag = models.TextField()
+class EventsDelhi(models.Model):
+    name = models.CharField(max_length=100)
+    img = models.ImageField(upload_to="Images/Delhi/Events")
+    location = models.TextField()
+    hreftag = models.TextField()
+class EventsChennai(models.Model):
+    name = models.CharField(max_length=100)
+    img = models.ImageField(upload_to="Images/Chennai/Events")
+    location = models.TextField()
+    hreftag = models.TextField()
+class EventsKolkata(models.Model):
+    name = models.CharField(max_length=100)
+    img = models.ImageField(upload_to="Images/Kolkata/Events")
+    location = models.TextField()
+    hreftag = models.TextField()
+class EventsMumbai(models.Model):
+    name = models.CharField(max_length=100)
+    img = models.ImageField(upload_to="Images/Mumbai/Events")
+    location = models.TextField()
+    hreftag = models.TextField()

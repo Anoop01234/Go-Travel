@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse,HttpResponseRedirect
-from .models import DelhiRestaurant, ChennaiRestaurants, MumbaiRestaurants, KolkataRestaurants, PlacesMumbai, PlacesDelhi, PlacesChennai, PlacesKolkata
+from .models import DelhiRestaurant, ChennaiRestaurants, MumbaiRestaurants, KolkataRestaurants, PlacesMumbai, PlacesDelhi, PlacesChennai, PlacesKolkata, EventsDelhi, EventsChennai, EventsKolkata, EventsMumbai
 # Create your views here
 def index(request):
     return  render(request,'HomePage/index.html')
@@ -12,8 +12,9 @@ def DelhiRestaurants(request):
 def PlaceDelhi(request):
     rests=PlacesDelhi.objects.all()
     return render(request,'Mumbai/PlacesDelhi.html',{'rests': rests})
-def EventsDelhi(request):
-    return render(request,'Delhi/EventsDelhi.html')
+def EventDelhi(request):
+    rests=EventsDelhi.objects.all()
+    return render(request,'Delhi/EventsDelhi.html',{'rests': rests})
 def ShopsDelhi(request):
     return render(request,'Delhi/ShopsDelhi.html')
 def Mumbai(request):
@@ -24,8 +25,9 @@ def MumbaiRestaurant(request):
 def PlaceMumbai(request):
     rests=PlacesMumbai.objects.all()
     return render(request,'Mumbai/PlacesMumbai.html',{'rests': rests})
-def EventsMumbai(request):
-    return render(request,'Mumbai/EventsMumbai.html')
+def EventMumbai(request):
+    rests=EventsMumbai.objects.all()
+    return render(request,'Mumbai/EventsMumbai.html',{'rests': rests})
 def ShopsMumbai(request):
     return render(request,'Mumbai/ShopsMumbai.html')
 def Chennai(request):
@@ -36,8 +38,9 @@ def ChennaiRestaurant(request):
 def PlaceChennai(request):
     rests=PlacesChennai.objects.all()
     return render(request,'Chennai/PlacesChennai.html',{'rests': rests})
-def EventsChennai(request):
-    return render(request,'Chennai/EventsChennai.html')
+def EventChennai(request):
+    rests=EventsChennai.objects.all()
+    return render(request,'Chennai/EventsChennai.html',{'rests': rests})
 def ShopsChennai(request):
     return render(request,'Chennai/ShopsChennai.html')
 def Kolkata(request):
@@ -48,8 +51,9 @@ def KolkataRestaurant(request):
 def PlaceKolkata(request):
     rests=PlacesKolkata.objects.all()
     return render(request,'Kolkata/PlacesKolkata.html',{'rests': rests})
-def EventsKolkata(request):
-    return render(request,'Kolkata/EventsKolkata.html')
+def EventKolkata(request):
+    rests=EventsKolkata.objects.all()
+    return render(request,'Kolkata/EventsKolkata.html',{'rests': rests})
 def ShopsKolkata(request):
     return render(request,'Kolkata/ShopsKolkata.html')
 
