@@ -48,8 +48,6 @@ Contributions are always welcome! Please ensure your pull request adheres to the
 ## Acknowledgement
 We will always be grateful to <b>Prof. Manish Hurkat</b> and <b>Prof. Eswaran Narasimhan</b>  for his constructive feedbacks and supportive mentoring during this project. Thanks for being a good mentor and for guiding us on the right path.
 
-## Contact 
-
 ## Copyright (c) [2020] [Team - GoTravel]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
