@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse,HttpResponseRedirect
 from .models import DelhiRestaurant, ChennaiRestaurants, MumbaiRestaurants, KolkataRestaurants, PlacesMumbai, PlacesDelhi, PlacesChennai, PlacesKolkata, EventsDelhi, EventsChennai, EventsKolkata, EventsMumbai, ShopsDelhi, ShopsChennai, ShopsKolkata, ShopsMumbai
+from django.core.mail import send_mail
+
 # Create your views here
 def index(request):
     return  render(request,'HomePage/index.html')
@@ -75,6 +77,16 @@ def contact(request):
         message_name = request.POST['message-name']
         message_email = request.POST['message-email']
         message   = request.POST['message']
+        #Send an email
+        send_mail(
+            'Message from '+ message_name, # subject
+            message, # message
+            message_email, # from email
+            ['anoopgupta1099@gmail.com'], # To email
+            )   
+            
+
+        print(message_name)
         return render(request,"HomePage/contact.html",{'message_name':message_name})
     else:
         return render(request,"HomePage/contact.html",{})

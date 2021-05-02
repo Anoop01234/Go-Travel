@@ -42,15 +42,23 @@
         <div class="wrap-contact100">
             <div class="contact100-form-title intro1">
                 <span class="contact100-form-title-1">
-					Contact Us - {{ message_name }}
+					<h2>
+                        Contact Us 
+                    </h2>
 				</span>
-
                 <span class="contact100-form-title-2">
-					Feel free to drop us a line below!
+					{% if message_name %}
+                        <h2>
+                            Thanks {{ message_name }}!
+                        </h2>
+                        <p style='color: white'>We received your email, we will reply to you shortly!</p>
+                    {% else %}
+                        Feel free to drop us a line below!
+                    {% endif %}
 				</span>
             </div>
 
-            <form class="contact100-form validate-form" action="{% url 'contact' %}">
+            <form class="contact100-form validate-form" method="POST" action="{% url 'contact' %}">
                 {% csrf_token %}
                 <div class="wrap-input100 validate-input" data-validate="Name is required">
                     <span class="label-input100">Full Name:</span>
