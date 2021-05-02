@@ -2,12 +2,12 @@
 Our project “Advance Intelligent Tourist Guide'' is an umbrella for all the globetrotters, tourists, casual weekend planners, etc. It provides all the facilities to the tourists for booking their vacations and holidays for either business or pleasure purposes. Moreover, the purpose is to accessorize the solution with more advanced technologies such as social media, different applications & features, advertisements, etc which will mitigate the problem for both customers and the company to reach out to each other and discovering a single stop for everything with a plethora of favorable deals coming their way for the buyers.
 
 ### Contents:
-#### - Pages
-#### - How to Install
-#### - Contribution Guidelines
-#### - Contributors
-#### - Acknowledgement
-#### - Licence
+1. Pages
+2. How to Install
+3. Contribution Guidelines
+4. Contributors
+5. Acknowledgement
+6. Licence
 
 ## Pages
 ### Homepage
