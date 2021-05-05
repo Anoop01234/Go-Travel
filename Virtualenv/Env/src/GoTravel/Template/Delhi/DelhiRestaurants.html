@@ -66,7 +66,7 @@
                 <li class="myli ">
                     <img src="{% static 'Delhi/Restaurants/Images/Tamra.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
                     <h3>Tamra</h3>
-                    <p class="price ">📍 Location </p>
+                    <p class="price ">📍 Connaught Place, Delhi </p>
                     {% if user.is_authenticated %}
                     <a href="../home/index" class="mya mybutton zoom">Book a Table</a> {% else %}
                     <a href="register.html" class="mya mybutton zoom">Register to explore</a> {% endif %}
@@ -76,18 +76,11 @@
                 <li class="myli ">
                     <img src="{% static 'Delhi/Restaurants/Images/TheFoodStore.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
                     <h3>The Food Store</h3>
-                    <p class="price ">📍 Location </p>
+                    <p class="price ">📍 Sectro 56, Delhi </p>
                     {% if user.is_authenticated %}
                     <a href="../home/index" class="mya mybutton zoom">Book a Table</a> {% else %}
                     <a href="register.html" class="mya mybutton zoom">Register to explore</a> {% endif %}
                 </li>
-                <li class="myli ">
-                    <img src="{% static 'Delhi/Restaurants/Images/TheImperialSpice.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
-                    <h3>The The Imperial Spice</h3>
-                    <p class="price ">📍 Location </p>
-                    {% if user.is_authenticated %}
-                    <a href="../home/index" class="mya mybutton zoom">Book a Table</a> {% else %}
-                    <a href="register.html" class="mya mybutton zoom">Register to explore</a> {% endif %} </li>
                 {% for rest in rests %}
                 <li class="myli ">
                     <img src="{{rest.img.url}}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
