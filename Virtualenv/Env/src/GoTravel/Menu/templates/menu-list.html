@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{%block title %}
+Menu List
+{%endblock title%}
+
+{% block content%}
+        <!--================Banner Area =================-->
+        <section class="banner_area">
+            <div class="container">
+                <div class="banner_content">
+                    <h4>Menu List</h4>
+                    <a href="#">Home</a>
+                    <a class="active" href="menu-list.html">Menu</a>
+                </div>
+            </div>
+        </section>
+        <!--================End Banner Area =================-->
+
+        <!--================End Our feature Area =================-->
+        <section class="most_popular_item_area menu_list_page">
+            <div class="container">
+                <div class="popular_filter">
+                    <ul>
+                        <li class="active" data-filter="*"><a href="">All</a></li>
+                      {% for category in categories%}
+                        <li data-filter=".{{category}}"><a href="#{{category}}">{{category}}</a></li>
+                      {%endfor%}
+                    </ul>
+                </div>
+                <div class="p_recype_item_main">
+                    <div class="row p_recype_item_active">
+                    {%for category in categories%}
+                    {% for menu_list in menu_lists%}
+                    {% if menu_list.category == category%}
+
+
+
+                        <div class="col-md-6 {{category}}">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img src="{{menu_list.image.url}}" alt="">
+                                </div>
+                                <div class="media-body">
+                                    <a><h3>{{menu_list.name}}</h3></a>
+                                    <h4>${{menu_list.price}}</h4>
+                                    <p>{{menu_list.description}} </p>
+                                </div>
+                            </div>
+                        </div>
+                      {%endif%}
+                    {%endfor%}
+                    {%endfor%}
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Our feature Area =================-->
+{%endblock content%}

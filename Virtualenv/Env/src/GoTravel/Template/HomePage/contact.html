@@ -6,39 +6,34 @@
     <title>Contact</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--===============================================================================================-->
     <link rel="icon" type="image/png" href="{% static 'Homepage/images/icons/favicon.ico' %}" />
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{% static 'Homepage/vendor/bootstrap/css/bootstrap.min.css' %}">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{% static 'Homepage/fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{% static 'Homepage/fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{% static 'Homepage/vendor/animate/animate.css' %}">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{% static 'Homepage/vendor/css-hamburgers/hamburgers.min.css' %}">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{% static 'Homepage/vendor/animsition/css/animsition.min.css' %}">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{% static 'Homepage/vendor/select2/select2.min.css' %}">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{% static 'Homepage/vendor/daterangepicker/daterangepicker.css' %}">
-    <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="{% static 'Homepage/css/util.css'%}">
     <link rel="stylesheet" type="text/css" href="{% static 'Homepage/css/main.css' %}">
-    <!--===============================================================================================-->
 </head>
 <style>
     .intro1 {
         background-image: url("{% static 'Homepage/images/bg-01.jpg' %}");
+    }
+    
+    .intro2 {
+        background-image: url("{% static 'HomePage/Contact/images/bg-01.jpg' %}");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 </style>
 
 <body>
 
 
-    <div class="container-contact100">
+    <div class="container-contact100 intro2">
         <div class="wrap-contact100">
             <div class="contact100-form-title intro1">
                 <span class="contact100-form-title-1">
@@ -79,8 +74,6 @@
                     <span class="focus-input100"></span>
                 </div>
                 <br><br>
-
-
                 <div class="container-contact100-form-btn">
                     <button class="contact100-form-btn">
 						<span>
@@ -93,31 +86,18 @@
         </div>
     </div>
 
-
-
     <div id="dropDownSelect1"></div>
-
-    <!--===============================================================================================-->
     <script src="{% static 'Homepage/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
-    <!--===============================================================================================-->
     <script src="{% static 'Homepage/vendor/animsition/js/animsition.min.js' %}"></script>
-    <!--===============================================================================================-->
     <script src="{% static 'Homepage/vendor/bootstrap/js/popper.js' %}"></script>
     <script src="{% static 'Homepage/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-    <!--===============================================================================================-->
     <script src="{% static 'Homepage/vendor/select2/select2.min.js' %}"></script>
-    <!--===============================================================================================-->
     <script src="{% static 'Homepage/vendor/daterangepicker/moment.min.js' %}"></script>
     <script src="{% static 'Homepage/vendor/daterangepicker/daterangepicker.js' %}"></script>
-    <!--===============================================================================================-->
     <script src="{% static 'Homepage/vendor/countdowntime/countdowntime.js' %}"></script>
-    <!--===============================================================================================-->
     <script src="{% static 'Homepage/https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes' %}"></script>
     <script src="{% static 'Homepage/js/map-custom.js' %}"></script>
-    <!--===============================================================================================-->
     <script src="{% static 'Homepage/js/main.js' %}"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="{% static 'Homepage/https://www.googletagmanager.com/gtag/js?id=UA-23581568-13' %}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];

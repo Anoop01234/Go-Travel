@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-
+    'Home',
+    'Booking',
+    'About',
+    'Menu',
+    'Contact',
     # User
 
     # Third Party apps
@@ -62,6 +65,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR,'Template'),
+            os.path.join(BASE_DIR,'templates')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -86,7 +90,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Travel',
         'USER': 'postgres',
-        'PASSWORD': 'anoop2750',
+        'PASSWORD': '',
         'HOST': 'localhost'
     }
 }
@@ -134,6 +138,7 @@ STATICFILES_DIRS=[
 ]
 MEDIA_URL='/Images/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'Images')
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 
 # Email settings
 EMAIL_HOST='localhost'

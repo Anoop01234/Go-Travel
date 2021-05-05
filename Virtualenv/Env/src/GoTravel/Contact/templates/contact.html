@@ -1,0 +1,90 @@
+{% extends 'base.html'%}
+{%load static%}
+{%block title%}
+Contact Us
+{%endblock title%}
+{% block content%}
+
+<!--================Banner Area =================-->
+<section class="banner_area">
+    <div class="container">
+        <div class="banner_content">
+            <h4>Contact Us</h4>
+            <a href="#">Home</a>
+            <a class="active" href="blog-gallery.html">Contat Us</a>
+        </div>
+    </div>
+</section>
+<!--================End Banner Area =================-->
+<!--================Contact Area =================-->
+<section class="contact_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="contact_details">
+                    <h3 class="contact_title">Contact Info</h3>
+                    <p>3M Himalaya is a Nepalese Restaurant serving tandoori and vegeterian dishes. Our foods reflects the diversities of himalayan regions. </p>
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4>Addtress</h4>
+                            <h5>393 Liverpool Rd, Ashfield NSW 2131 Sydney, Australia</h5>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4>Phone</h4>
+                            <h5>0451 956 182</h5>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-left">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4>Email</h4>
+                            <h5>info@3m-himalaya.com.au</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row contact_form_area">
+                  {% if messages%}
+                  <p>{{messages}}</p>
+                  {%endif%}
+                    <h3 class="contact_title">Send Message</h3>
+                    <form action="{% url 'Contact:contact' %}" method="POST" id="contactForm">
+                      {% csrf_token %}
+                        <div class="form-group col-md-12">
+                          <input type="text" class="form-control" id="name" name="firstname" placeholder="First Name*" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                          <input type="text" class="form-control" id="last" name="lastname" placeholder="Last Name*" required>
+                        </div>
+
+                        <div class="form-group col-md-12">
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Your Email*" required>
+                        </div>
+                         <div class="form-group col-md-12">
+                          <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                          <textarea class="form-control" id="message" name="message" placeholder="Write Message" required></textarea>
+                        </div>
+                        <div class="form-group col-md-12">
+                          <input type="submit" class="btn btn-danger" name="" value="Send Message">
+                         </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Contact Area =================-->
+{%endblock content%}

@@ -28,4 +28,5 @@ urlpatterns = [
     path("Mumbai/faq.html", views.faq , name="FAQ"),
     path("Chennai/faq.html", views.faq , name="FAQ"),
     path("Kolkata/faq.html", views.faq , name="FAQ"),
+    path("Delhi/register.html",views.register, name="register")
 ]

@@ -17,6 +17,8 @@ def PlaceDelhi(request):
 def EventDelhi(request):
     rests=EventsDelhi.objects.all()
     return render(request,'Delhi/EventsDelhi.html',{'rests': rests})
+def register(request):
+    return render(request,"Delhi/register.html")
 def ShopDelhi(request):
     rests=ShopsDelhi.objects.all()
     return render(request,'Delhi/ShopsDelhi.html',{'rests': rests})
@@ -78,13 +80,14 @@ def contact(request):
         message_email = request.POST['message-email']
         message   = request.POST['message']
         #Send an email
+        
         send_mail(
             'Message from '+ message_name, # subject
             message, # message
             message_email, # from email
             ['anoopgupta1099@gmail.com'], # To email
             )   
-            
+         
 
         print(message_name)
         return render(request,"HomePage/contact.html",{'message_name':message_name})
