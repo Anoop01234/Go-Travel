@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href=" {% static 'FAQ/images/favicon-32x32.png ' %}">
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <link rel="stylesheet" href="{% static 'FAQ/style.css' %}">
+</head>
+<style>
+    .image__wrapper_inner {
+        background: url("{% static 'FAQ//images/illustration-woman-online-desktop.svg' %}");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: 120% center;
+    }
+</style>
+
+<body>
+    <main class="wrapper">
+        <div class="image__wrapper">
+            <div class="image__wrapper_inner">
+
+            </div>
+            <img class="box" src="{% static 'FAQ/images/illustration-box-desktop.svg' %}" alt="box">
+        </div>
+        <div class="accordion__wrapper">
+            <h1 class="title__accordion">FAQ</h1>
+            <div class="questions__accordions">
+                <div class="question-answer__accordion">
+                    <div class="question">
+                        <h3 class="title__question">
+                            Will there be other states be coming as well?
+                        </h3>
+                        <img src="{% static 'FAQ/images/icon-arrow-down.svg' %}">
+                    </div>
+                    <div class="answer">
+                        You will see other states in the upcoming updates of the website. Our team is regrously working on it.
+                    </div>
+                </div>
+
+                <div class="question-answer__accordion">
+                    <div class="question">
+                        <h3 class="title__question">
+                            Can I book restaurants from your website?
+                        </h3>
+                        <img src="{% static 'FAQ/images/icon-arrow-down.svg' %}">
+                    </div>
+                    <div class="answer ">
+                        No you can not book restaurants for now. But in the next latest update you will be able to book from our website itself.
+                    </div>
+                </div>
+
+                <div class="question-answer__accordion">
+                    <div class="question">
+                        <h3 class="title__question">
+                            How do I reset my password?
+                        </h3>
+                        <img src="{% static 'FAQ/images/icon-arrow-down.svg' %}">
+                    </div>
+                    <div class="answer ">
+                        Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+                    </div>
+                </div>
+
+                <div class="question-answer__accordion">
+                    <div class="question">
+                        <h3 class="title__question">
+                            Can I delete my account?
+                        </h3>
+                        <img src="{% static 'FAQ/images/icon-arrow-down.svg' %}">
+                    </div>
+                    <div class="answer ">
+                        Yes! Send us a message and we’ll process your request no questions asked.
+                    </div>
+                </div>
+
+                <div class="question-answer__accordion">
+                    <div class="question">
+                        <h3 class="title__question">
+                            Do you provide additional support?
+                        </h3>
+                        <img src="{% static 'FAQ/images/icon-arrow-down.svg' %}">
+                    </div>
+                    <div class="answer ">
+                        Email support is available 24/7. Phone lines are open during normal business hours.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <script src="{% static 'FAQ/script.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Go-Travels</title>
+    <link rel="shortcut icon" href="img/icon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{% static 'Kolkata/Restaurants/css/bootstrap.css ' %}">
+    <!-- Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="{% static 'Kolkata/Restaurants/css/style.css ' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation-->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top" style="background-color: black; opacity: 0.8;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url 'EventsKolkata' %}" class="page-scroll">Events</a></li>
+                    <li><a href="{% url 'PlacesKolkata' %}" class="page-scroll">Tourism</a></li>
+                    <li><a href="{% url 'Kolkata' %}" class="page-scroll">Home</a></li>
+                    <li><a href="{% url 'ShopsKolkata' %}" class="page-scroll">Market</a></li>
+                    <li><a href="{% url 'KolkataRestaurants' %}" class="page-scroll">Restaurants</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header id="header">
+        <div class="intro">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="intro-text">
+                            <h1>Restaurants in Kolkata</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home page -->
+
+    <body>
+        <div id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="menu-section">
+                        <h2 class="menu-section-title">Food is LOVE and with your one click you can find exquisite delicacies that suits your Budget</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mydiv" style="text-align: center; ">
+            <ul class="myul " style="align-items: center; ">
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/6BallygungePlace.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>6 Ballygunge Place</h3>
+                    <p class="price "> 📍 Location </p>
+                    <a href="https://www.eazydiner.com/kolkata/6-ballygunge-place-ballygunge-kolkata-617651" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/Alfresco.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>Alfresco</h3>
+                    <p class="price ">📍 Location </p>
+                    <a href="https://www.eazydiner.com/kolkata/alfresco-the-lalit-great-eastern-kolkata-esplanade-600203?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/AsiaKitchen.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px; ">
+                    <h3>Asia Kitchen</h3>
+                    <p class="price ">📍 Location </p>
+                    <a href="https://www.eazydiner.com/kolkata/asia-kitchen-by-mainland-china-acropolis-mall-kasba-619803?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/BJsSportsCafe.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>BJ's Sports Cafe</h3>
+                    <p class="price ">📍 Location </p>
+                    <a href="https://www.eazydiner.com/kolkata/bjs-sports-cafe-cum-lounge-sector-1-salt-lake-kolkata-619710?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/CafeMezzuna.jpg ' %} " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>Cafe Mezzuna</h3>
+                    <p class="price ">📍 Location </p>
+                    <a href="https://www.eazydiner.com/kolkata/cafe-mezzuna-south-city-mall-prince-anwar-shah-road-613911?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/ChezPanOrientalKitchen.jpeg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>Chez Pan Oriental Kitchen</h3>
+                    <p class="price ">📍 Location</p>
+                    <a href="https://www.eazydiner.com/kolkata/chez-pan-oriental-kitchen-baghajatin-kolkata-648316?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/FlyKouzina.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>Fly Kouzina</h3>
+                    <p class="price ">📍 Location </p>
+                    <a href="https://www.eazydiner.com/kolkata/fly-kouzina-sector-1-salt-lake-604418?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/JWKitchen.jpg ' %} " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>JW Kitchen</h3>
+                    <p class="price ">📍 Location </p>
+                    <a href="https://www.eazydiner.com/kolkata/jw-kitchen-jw-marriott-kolkata-652664?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/KouzinaMiningCo.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>Kouzina Mining Co</h3>
+                    <p class="price ">📍 Location</p>
+                    <a href="https://www.eazydiner.com/kolkata/kouzina-mining-co-sector-1-salt-lake-kolkata-648383?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/Oh!Calcutta.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>Oh! Calcutta</h3>
+                    <p class="price ">📍 Location </p>
+                    <a href="https://www.eazydiner.com/kolkata/oh-calcutta-forum-mall-elgin-613908?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/Sonargaon.jpg ' %} " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>Sonargaon</h3>
+                    <p class="price ">📍 Location</p>
+                    <a href="https://www.eazydiner.com/kolkata/sonargaon-taj-bengal-alipore-600194" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/TheBridge.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>The Bridge</h3>
+                    <p class="price ">📍 Location </p>
+                    <a href="https://www.eazydiner.com/kolkata/the-bridge-the-park-park-street-area-600169?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/TheFattyBao.jpeg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>The Fatty Bao</h3>
+                    <p class="price ">📍 Location </p>
+                    <a href="https://www.eazydiner.com/kolkata/the-fatty-bao-camac-street-area-kolkata-652989" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/VintageAsia.jpg ' %} " class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>Vinatage Asia</h3>
+                    <p class="price ">📍 Location </p>
+                    <a href="https://www.eazydiner.com/kolkata/vintage-asia-science-city-area-kolkata-652322?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/Restaurants/Images/Wink.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>Wink</h3>
+                    <p class="price ">📍 Location</p>
+                    <a href="https://www.eazydiner.com/kolkata/wink-vivanta-kolkata-em-bypass-600206?deal_types[]=postpaid" target="_blank" class="mya mybutton zoom">Visit</a>
+                </li>
+                {% for rest in rests %}
+                <li class="myli ">
+                    <img src="{{rest.img.url}}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                    <h3>{{rest.name}}</h3>
+                    <p class="price ">📍 {{rest.location}}</p>
+                    <a href=" {{ rest.hreftag }}" target="_blank" class="mya mybutton zoom">Book a Table</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div id="footer ">
+            <div id="contact " class="text-center ">
+                <div class="container ">
+
+                    <div class="col-md-8 col-md-offset-2 ">
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="container text-center ">
+                <p>Designed with patience. 🙂 All rights reserved.</p>
+            </div>
+        </div>
+        <script type="text/javascript " src="js/jquery.1.11.1.js "></script>
+        <script type="text/javascript " src="js/bootstrap.js "></script>
+        <script type="text/javascript " src="js/SmoothScroll.js "></script>
+        <script type="text/javascript " src="js/jqBootstrapValidation.js "></script>
+        <script type="text/javascript " src="js/contact_me.js "></script>
+        <script type="text/javascript " src="js/main.js "></script>
+        <script type="text/javascript " src="js/javascript.js "></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,49 @@
+{% extends 'base.html'%}
+{%load static %}
+{% block title%}
+About Us
+{%endblock title%}
+
+{% block content%}
+
+        <!--================Banner Area =================-->
+        <section class="banner_area">
+            <div class="container">
+                <div class="banner_content">
+                    <h4>About Us</h4>
+                    <a href="#">Home</a>
+                    <a class="active" href="#">About Us</a>
+                </div>
+            </div>
+        </section>
+        <!--================End Banner Area =================-->
+
+        <!--================About Us Content Area =================-->
+        <section class="about_us_content">
+            <div class="container">
+              {% for about in about_us%}
+                <div class="row about_inner_item">
+                    <div class="col-md-6">
+                        <div class="about_left_content">
+                            <h4>{{about.title}}</h4>
+                            <p>{{about.description_main}}.</p>
+                            <ul>
+                                <li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> {{about.content_sub}}.</li>
+                            </ul>
+                            <p>{{about.description_sub}}.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about_right_ms">
+                            <div class="about_ms_item wb50">
+                                <img src="{{about.image.url}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              {%endfor%}
+
+            </div>
+        </section>
+        <!--================End About Us Content Area =================-->
+{%endblock content%}

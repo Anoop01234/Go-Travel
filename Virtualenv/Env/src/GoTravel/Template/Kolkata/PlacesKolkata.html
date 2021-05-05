@@ -1,0 +1,192 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Go-Travels</title>
+    <!-- Bootstrap -->
+    <link rel=" stylesheet " type="text/css " href="{% static 'Kolkata/PlacesToVisit/css/bootstrap.css ' %} ">
+    <!-- Stylesheet-->
+    <link rel="stylesheet " type="text/css " href="{% static 'Kolkata/PlacesToVisit/css/style.css' %} ">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700' %} " rel="stylesheet ">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' %} " rel="stylesheet ">
+    <link href="{% static 'https://fonts.googleapis.com/css?family=Rochester' %} " rel="stylesheet ">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="background-image: url(img/giphy.gif);">
+    <!-- Navigation-->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top" style="background-color: black; opacity: 0.8;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url 'EventsKolkata' %}" class="page-scroll">Events</a></li>
+                    <li><a href="{% url 'PlacesKolkata' %}" class="page-scroll">Tourism</a></li>
+                    <li><a href="{% url 'Kolkata' %}" class="page-scroll">Home</a></li>
+                    <li><a href="{% url 'ShopsKolkata' %}" class="page-scroll">Market</a></li>
+                    <li><a href="{% url 'KolkataRestaurants' %}" class="page-scroll">Restaurants</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header id="header">
+        <div class="intro">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="intro-text">
+                            <h1>Places in Kolkata</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home page -->
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <!-- Home page -->
+
+
+    <div id="home">
+        <div class="container">
+            <div class="row">
+                <div class="menu-section">
+                    <h2 class="menu-section-title">Calcutta is not just a place, it is indeed an emotion. It is chaotic, it is moody. It is a rich tapestry of culture, politics, and history, and it is nostalgia personified.</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="mydiv" style="text-align: center; ">
+        <ul class="myul " style="align-items: center; ">
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/victorialmemorial.jpg' %}" class="myimg zoom">
+                <h3>Victoria Memorial</h3>
+                <p class="price "> 📍 Location </p>
+                <a href="" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/fortwilliam.jpg' %}" class="myimg zoom">
+                <h3>Fort William</h3>
+                <p class="price ">📍 Location </p>
+                <a href="" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/belurmath.jpg' %}" class="myimg zoom">
+                <h3>Belur Math</h3>
+                <p class="price ">📍 Location </p>
+                <a href="" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/howrahbridge.jpg' %}" class="myimg zoom">
+                <h3>Howrah Bridge</h3>
+                <p class="price ">📍 Location </p>
+                <a href="" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/birlaplaneterium.jpg' %}" class="myimg zoom">
+                <h3>Birla Planetarium</h3>
+                <p class="price ">📍 Location </p>
+                <a href="" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/indianmuseum.jpg' %}" class="myimg zoom ">
+                <h3>Indian Museum</h3>
+                <p class="price ">📍 Location</p>
+                <a href="" target="_blank " class="mya mybutton zoom ">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/marblepalace.jpg' %} " class="myimg zoom ">
+                <h3>Marble Palace Mansion</h3>
+                <p class="price ">📍 Location </p>
+                <a href="" target="_blank " class="mya mybutton zoom ">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/sciencecity.jpg' %} " class="myimg zoom ">
+                <h3>Science City</h3>
+                <p class="price ">📍 Location </p>
+                <a href="-delhi-110982?deal_types[]=postpaid'%} " target="_blank " class="mya mybutton zoom ">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/edengardens.jpg' %} " class="myimg zoom ">
+                <h3>Eden Gardens</h3>
+                <p class="price ">📍 Location</p>
+                <a href="" target="_blank " class="mya mybutton zoom ">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/rabindrasarovar.jpg' %} " class="myimg zoom ">
+                <h3>Rabindra Sarovar</h3>
+                <p class="price ">📍 Location </p>
+                <a href="" target="_blank " class="mya mybutton zoom ">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/shobhabajarrajbari.jpg'%} " class="myimg zoom ">
+                <h3>Shobhabazar Rajbari</h3>
+                <p class="price ">📍 Location</p>
+                <a href="" target="_blank " class="mya mybutton zoom ">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/kalighattemple.jpg' %}" class="myimg zoom ">
+                <h3>Kalighat Temple</h3>
+                <p class="price ">📍 Location </p>
+                <a href="" target="_blank " class="mya mybutton zoom ">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/EcoToiurism.jpg' %}" class=" myimg zoom ">
+                <h3>Eco Tourism Park</h3>
+                <p class="price ">📍 Location </p>
+                <a href="" target="_blank " class="mya mybutton zoom ">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/aliporeZoo.jpg' %}" class="myimg zoom ">
+                <h3>Alipore Zoo</h3>
+                <p class="price ">📍 Location </p>
+                <a href="" target="_blank " class="mya mybutton zoom ">Visit Now</a>
+            </li>
+            <li class="myli ">
+                <img src="{% static 'Kolkata/PlacesToVisit/Images/botanicalgardens.jpg' %} " class="myimg zoom ">
+                <h3>Botanical Gardens of Calcutta</h3>
+                <p class="price ">📍 Location</p>
+                <a href="" target="_blank " class="mya mybutton zoom ">Visit Now</a>
+            </li>
+            {% for rest in rests %}
+            <li class="myli ">
+                <img src="{{rest.img.url}}" class="myimg zoom" style="height: 250px; width:400px; border-radius: 20px;">
+                <h3>{{rest.name}}</h3>
+                <p class="price ">📍 {{rest.location}}</p>
+                <a href=" {{ rest.hreftag }}" target="_blank" class="mya mybutton zoom">Visit Now</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div id="footer ">
+        <div id="contact " class="text-center ">
+            <div class="container ">
+
+                <div class="col-md-8 col-md-offset-2 ">
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center ">
+            <p>Designed with patience. 🙂 All rights reserved.</p>
+        </div>
+    </div>
+    <script type="text/javascript " src="{% static 'js/jquery.1.11.1.js' %} "></script>
+    <script type="text/javascript " src="{% static 'js/bootstrap.js' %} "></script>
+    <script type="text/javascript " src="{% static 'js/SmoothScroll.js' %} "></script>
+    <script type="text/javascript " src="{% static 'js/jqBootstrapValidation.js' %} "></script>
+    <script type="text/javascript " src="{% static 'js/contact_me.js' %} "></script>
+    <script type="text/javascript " src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript " src="{% static 'js/javascript.js' %} "></script>
+
+</body>
+
+</html>

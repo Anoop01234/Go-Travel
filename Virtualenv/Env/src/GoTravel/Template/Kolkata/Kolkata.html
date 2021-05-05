@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Go-Travels</title>
+    <link rel="shortcut icon" href="img/icon.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{% static 'Kolkata/KolkataHomePage/css/bootstrap.css' %}">
+    <!-- Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="{% static 'Kolkata/KolkataHomePage/css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+    <style>
+        .intro {
+            display: table;
+            width: 100%;
+            padding: 0;
+            background: url("{% static 'Kolkata/KolkataHomePage/img/image-bg1.jpg' %}") center center no-repeat;
+            background-color: #e5e5e5;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            -o-background-size: cover;
+        }
+    </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation-->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top" style="background-color: black; opacity: 0.8;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url 'EventsKolkata' %}" class="page-scroll">Events</a></li>
+                    <li><a href="{% url 'PlacesKolkata' %}" class="page-scroll">Tourism</a></li>
+                    <li><a href="{% url 'index' %}" class="page-scroll">Home</a></li>
+                    <li><a href="{% url 'ShopsKolkata' %}" class="page-scroll">Market</a></li>
+                    <li><a href="{% url 'KolkataRestaurants' %}" class="page-scroll">Restaurants</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header id="header">
+        <div class="intro">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="intro-text">
+                            <h1>Kolkata</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home page -->
+
+    <body>
+        <div id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="menu-section">
+                        <h2 class="menu-section-title">Explore Kolkata</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mydiv" style="text-align: center; ">
+            <ul class="myul " style="align-items: center; ">
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/KolkataHomePage/Images/Event.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; ">
+                    <h3>Events</h3>
+                    <a href="EventsKolkata.html" class="mya mybutton zoom">Let's Explore</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/KolkataHomePage/Images/Place.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; ">
+                    <h3>Places to Visit</h3>
+                    <a href="PlacesKolkata.html" class="mya mybutton zoom">Let's Explore</a>
+                </li>
+                <li class="myli ">
+                    <img src="{% static 'Kolkata/KolkataHomePage/Images/Restaurants.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; ">
+                    <h3>Restaurants</h3>
+                    <a href="KolkataRestaurants.html" name="KolkataRestaurants" class="mya mybutton zoom">Let's Explore</a>
+                </li>
+            </ul>
+            <ul width=100%>
+                <li class="myli2 " width=50%>
+                    <img src="{% static 'Kolkata/KolkataHomePage/Images/Shop.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; ">
+                    <h3>Shops and Markets</h3>
+                    <a href="ShopsKolkata.html" class="mya mybutton zoom">Let's Explore</a>
+                </li>
+                <li class="myli2 " width=50%>
+                    <img src="{% static 'Kolkata/KolkataHomePage/Images/Faq.jpg ' %}" class="myimg zoom" style="height: 250px; width:400px; ">
+                    <h3>FAQs</h3>
+                    <a href="faq.html" class="mya mybutton zoom">Let's Explore</a>
+                </li>
+
+            </ul>
+        </div>
+        <div id="footer ">
+            <div id="contact " class="text-center ">
+                <div class="container ">
+
+                    <div class="col-md-8 col-md-offset-2 ">
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="container text-center ">
+                <p>Designed with patience. 🙂 All rights reserved.</p>
+            </div>
+        </div>
+    </body>
+
+</html>
