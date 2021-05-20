@@ -12,35 +12,44 @@ Our project “Advance Intelligent Tourist Guide'' is an umbrella for all the gl
 ## Pages
 ### Homepage
 Here you will be able to view four metropolitan cities of India i.e. Delhi, Mumbai, Chennai and Kolkata.
+
 ![image](https://user-images.githubusercontent.com/42812907/118974810-ded71980-b990-11eb-9d40-66eeb76400b0.png)
 
-### And based on your interest you can visit any city and see complete tour guidelines for that particular city.
+And based on your interest you can visit any city and see complete tour guidelines for that particular city.
+
 ![image](https://user-images.githubusercontent.com/42812907/118974931-075f1380-b991-11eb-95b3-54b580623bf2.png)
 
 ### Restaurants
 Here we'll have restaurants for 4 metropolitan cities i.e. Delhi Mumbai, Chennai and Kolkata. Let's say Delhi-
+
 ![image](https://user-images.githubusercontent.com/42812907/118975022-23fb4b80-b991-11eb-9819-af9da639cf4b.png)
 
 ### Booking Restaurants
+
 ![image](https://user-images.githubusercontent.com/42812907/118975525-b7cd1780-b991-11eb-86b3-063924c7e0aa.png)
 
 ### Must see the place
 Here we'll have must visit places for Delhi.
+
 ![image](https://user-images.githubusercontent.com/42812907/118975297-7fc5d480-b991-11eb-9241-16d643163804.png)
 
 ### Events
 Here we'll have events for Delhi.
+
 ![image](https://user-images.githubusercontent.com/42812907/118975324-87857900-b991-11eb-8d95-ef1877dd813c.png)
 
 ### Shops and markets
 Here we'll have shops and markets for Delhi.
+
 ![image](https://user-images.githubusercontent.com/42812907/118975365-910ee100-b991-11eb-9755-509ce01c89f0.png)
 
 ### FAQs
 Here we'll have the general questions with answers and Travel related queries.
+
 ![image](https://user-images.githubusercontent.com/42812907/118975396-9b30df80-b991-11eb-9b43-3d9b451a296d.png)
 
 ### Admin page
+
 ![image](https://user-images.githubusercontent.com/42812907/118975647-db905d80-b991-11eb-94ae-4dd11dab5d87.png)
 
 
