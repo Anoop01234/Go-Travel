@@ -14,9 +14,9 @@ Our project “Advance Intelligent Tourist Guide'' is an umbrella for all the gl
 Here you will be able to view four metropolitan cities of India i.e. Delhi, Mumbai, Chennai and Kolkata. Also here is the page from where you can register user and Sign-in to our website. (P.S.- You wont be able to book a table in a restaurant unless you are signed in to our website)
 
 ![image](https://user-images.githubusercontent.com/42812907/118974810-ded71980-b990-11eb-9d40-66eeb76400b0.png)
-![image](https://user-images.githubusercontent.com/42812907/118987364-d33e1f80-b99d-11eb-83be-e3f7743a8f34.png)
+![image](https://user-images.githubusercontent.com/42812907/118988236-a2121f00-b99e-11eb-9a55-9815cd79a943.png)
 ![image](https://user-images.githubusercontent.com/42812907/118987559-fe287380-b99d-11eb-8039-6fbcc4a6d647.png)
-![image](https://user-images.githubusercontent.com/42812907/118987161-a427ae00-b99d-11eb-865b-886f12b1569c.png)
+![Uploading image.png…]()
 
 
 And based on your interest you can visit any city and see complete tour guidelines for that particular city. So lets suppose you click Delhi, so you can view different Events, Places to Visit, Shops and Market and FAQs.
