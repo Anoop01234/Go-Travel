@@ -14,8 +14,8 @@ Our project “Advance Intelligent Tourist Guide'' is an umbrella for all the gl
 Here you will be able to view four metropolitan cities of India i.e. Delhi, Mumbai, Chennai and Kolkata. Also here is the page from where you can register user and Sign-in to our website. (P.S.- You wont be able to book a table in a restaurant unless you are signed in to our website)
 
 ![image](https://user-images.githubusercontent.com/42812907/118974810-ded71980-b990-11eb-9d40-66eeb76400b0.png)
-![Screenshot (27)](https://user-images.githubusercontent.com/60193636/118985080-c4ef0400-b99b-11eb-96b5-bf9ca8fd03df.png)
-![Screenshot (28)](https://user-images.githubusercontent.com/60193636/118985090-c6b8c780-b99b-11eb-99ba-96e3e230af0b.png)
+![image](https://user-images.githubusercontent.com/42812907/118987364-d33e1f80-b99d-11eb-83be-e3f7743a8f34.png)
+![image](https://user-images.githubusercontent.com/42812907/118987559-fe287380-b99d-11eb-8039-6fbcc4a6d647.png)
 ![image](https://user-images.githubusercontent.com/42812907/118987161-a427ae00-b99d-11eb-865b-886f12b1569c.png)
 
 
