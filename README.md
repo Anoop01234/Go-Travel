@@ -16,7 +16,7 @@ Here you will be able to view four metropolitan cities of India i.e. Delhi, Mumb
 ![image](https://user-images.githubusercontent.com/42812907/118974810-ded71980-b990-11eb-9d40-66eeb76400b0.png)
 ![Screenshot (27)](https://user-images.githubusercontent.com/60193636/118985080-c4ef0400-b99b-11eb-96b5-bf9ca8fd03df.png)
 ![Screenshot (28)](https://user-images.githubusercontent.com/60193636/118985090-c6b8c780-b99b-11eb-99ba-96e3e230af0b.png)
-![Screenshot (26)](https://user-images.githubusercontent.com/60193636/118985094-c7e9f480-b99b-11eb-8d83-50e8e74b414d.png)
+![image](https://user-images.githubusercontent.com/42812907/118987161-a427ae00-b99d-11eb-865b-886f12b1569c.png)
 
 
 And based on your interest you can visit any city and see complete tour guidelines for that particular city. So lets suppose you click Delhi, so you can view different Events, Places to Visit, Shops and Market and FAQs.
