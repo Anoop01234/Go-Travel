@@ -1,5 +1,5 @@
 # Go-Travel Website
-Our project “Advance Intelligent Tourist Guide'' is an umbrella for all the globetrotters, tourists, casual weekend planners, etc. It provides all the facilities to the tourists for booking their vacations and holidays for either business or pleasure purposes. Moreover, the purpose is to accessorize the solution with more advanced technologies such as social media, different applications & features, advertisements, etc which will mitigate the problem for both customers and the company to reach out to each other and discovering a single stop for everything with a plethora of favorable deals coming their way for the buyers.
+Our project “Advance Intelligent Tourist Guide" is an umbrella for all the globetrotters, tourists, casual weekend planners, etc. It provides all the facilities to the tourists for booking their vacations and holidays for either business or pleasure purposes. Moreover, the purpose is to accessorize the solution with more advanced technologies such as social media, different applications & features, advertisements, etc which will mitigate the problem for both customers and the company to reach out to each other and discovering a single stop for everything with a plethora of favorable deals coming their way for the buyers.
 
 ### Contents:
 1. Pages
@@ -66,7 +66,7 @@ Here is the inbuilt interface of Django Admin page, from here you can add all th
 
 
 ## How to run the server on your local machine:
-- clone the repository in your local machine
+- Clone the repository in your local machine
 - Open project in a code editor (Visual studio code, atom, pycharm, etc)
 - Open terminal and run command "pip install -r requirements.txt"
 - Activate the virtual environment
