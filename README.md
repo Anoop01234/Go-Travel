@@ -3,7 +3,7 @@ Our project “Advance Intelligent Tourist Guide'' is an umbrella for all the gl
 
 ### Contents:
 1. Pages
-2. How to Install
+2. How to run server
 3. Contribution Guidelines
 4. Contributors
 5. Acknowledgement
@@ -14,8 +14,14 @@ Our project “Advance Intelligent Tourist Guide'' is an umbrella for all the gl
 Here you will be able to view four metropolitan cities of India i.e. Delhi, Mumbai, Chennai and Kolkata. Also here is the page from where you can register user and Sign-in to our website. (P.S.- You wont be able to book a table in a restaurant unless you are signed in to our website)
 
 ![image](https://user-images.githubusercontent.com/42812907/118974810-ded71980-b990-11eb-9d40-66eeb76400b0.png)
-![image](https://user-images.githubusercontent.com/42812907/118988236-a2121f00-b99e-11eb-9a55-9815cd79a943.png)
+
+#### Register page
 ![image](https://user-images.githubusercontent.com/42812907/118987559-fe287380-b99d-11eb-8039-6fbcc4a6d647.png)
+
+#### Login Page
+![image](https://user-images.githubusercontent.com/42812907/118988236-a2121f00-b99e-11eb-9a55-9815cd79a943.png)
+
+#### Contact Us page
 ![image](https://user-images.githubusercontent.com/42812907/118988484-dbe32580-b99e-11eb-8789-6f100ba3269a.png)
 
 
@@ -54,12 +60,21 @@ Here we'll have the general questions with answers and Travel related queries.
 ![image](https://user-images.githubusercontent.com/42812907/118975396-9b30df80-b991-11eb-9b43-3d9b451a296d.png)
 
 ### Admin page
+Here is the inbuilt interface of Django Admin page, from here you can add all the restaurants, places to visit, events, shops and markets and others.
 
 ![image](https://user-images.githubusercontent.com/42812907/118975647-db905d80-b991-11eb-94ae-4dd11dab5d87.png)
 
 
-## How to Install:-
-- Go-Travel will be live soon. 
+## How to run the server on your local machine:
+- clone the repository in your local machine
+- Open project in a code editor (Visual studio code, atom, pycharm, etc)
+- Open terminal and run command "pip install -r requirements.txt"
+- Activate the virtual environment
+- In settings.py enter database credentials and database name
+- Navigate where "manage.py" file is located and run command "python manage.py makemigrations", then "python manage.py migrate"
+- At last run command "python manage.py runserver" to run server
+- To access admin panel, create django superuser and add "/admin" in the url in the browesr
+
 
 ## Contribution Guidelines:-
 Contributions are always welcome! Please ensure your pull request adheres to the following guidelines:
