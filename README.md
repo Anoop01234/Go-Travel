@@ -6,8 +6,7 @@ Our project “Advance Intelligent Tourist Guide" is an umbrella for all the glo
 2. How to run server
 3. Contribution Guidelines
 4. Contributors
-5. Acknowledgement
-6. Licence
+5. Licence
 
 ## Pages
 ### Homepage
@@ -93,10 +92,6 @@ Contributions are always welcome! Please ensure your pull request adheres to the
 - Muskan Goel - [Connect on Github](https://github.com/muskan-goel)
 - Anushree Krishania - [Connect on Github](https://github.com/anu180)
 - Tanmay Chaturvedi - [Connect on Github](https://github.com/CreamDePie)
-
-
-## Acknowledgement
-We will always be grateful to <b>Prof. Manish Hurkat</b> and <b>Prof. Eswaran Narasimhan</b>  for his constructive feedbacks and supportive mentoring during this project. Thanks for being a good mentor and for guiding us on the right path.
 
 ## Copyright (c) [2020] [Team - GoTravel]
 
