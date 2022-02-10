@@ -6,7 +6,7 @@
 #
 
 virtualenv==20.4.6	#Virtual Environment
-Django==3.2.11 #Django
+Django==3.2.12 #Django
 psycopg2==2.8.6		#Psycopg2 -> To connect PostgreSQL with django
 Pillow==9.0.0		#For handling images in django
 asgiref==3.2.10		#For server to communcate with website
