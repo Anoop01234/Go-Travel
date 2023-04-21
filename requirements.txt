@@ -11,4 +11,4 @@ psycopg2==2.8.6		#Psycopg2 -> To connect PostgreSQL with django
 Pillow==9.0.0		#For handling images in django
 asgiref==3.2.10		#For server to communcate with website
 pytz==2020.1		#Cross platform timezone
-sqlparse==0.3.1		#Non-validating SQL parser
+sqlparse==0.4.4		#Non-validating SQL parser
